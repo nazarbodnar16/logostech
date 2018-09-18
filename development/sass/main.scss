@@ -1,0 +1,20 @@
+//Global things
+@import "reset/normalize";
+@import "reset/reset";
+
+//Basic configuration
+@import "base/variables";
+@import "base/base";
+@import "base/buttons";
+
+//Parts
+@import "parts/header";
+@import "parts/about";
+@import "parts/skills";
+@import "parts/portfolio";
+@import "parts/contact";
+@import "parts/footer";
+
+//Pages
+@import "page/404";
+@import "page/blog-post";

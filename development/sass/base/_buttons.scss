@@ -1,0 +1,21 @@
+.default-btn{
+	color: $clr_white;
+	position: relative;
+	text-transform: uppercase;
+	border: 1px solid $clr_white;
+	padding: 7px 33px;
+	font-size: 15px;
+	font-family: $font-oswald;
+	&:after{
+		font-size: 18px;
+		position: absolute;
+		content: '';
+		border-top: 1px solid $clr-red;
+		border-right: 1px solid $clr-red;
+		height: 5px;
+		width: 5px;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%) rotate(45deg);
+	}
+}

@@ -1,0 +1,49 @@
+body {
+  overflow-x: hidden;
+  font-family: $font-quicksand;
+  font-size: 16px;
+  line-height: 22px;
+  min-width: 320px;
+  max-width: 100vw;
+  position: relative;
+  color: $clr_main;
+  letter-spacing: 1px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a{
+  color: $clr_white;
+  transition: all .3s;
+  &:hover{
+    color: $clr_gray;
+    text-decoration: none;
+  }
+}
+/* my style */
+h4{
+  color: $clr_white;
+  font-size: 24px;
+  font-family: $font-oswald;
+}
+/* .container{
+  max-width: 1054px;
+  margin: 0 auto;
+  display: block;
+  padding: 0 15px;
+} */
+.clearfix{
+  position: relative;
+  &:before{
+    display: block;
+    clear: both;
+    content: '';
+  }
+  &:after{
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
