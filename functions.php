@@ -51,6 +51,7 @@ function my_assets() {
 	wp_enqueue_script( 'id-vendor-script', get_template_directory_uri() . '/scripts/vendor.min.js', array(), '1.0.0', true );
 
 	//Custom scripts
+	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/development/scripts/swiper.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'id-custom-script', get_template_directory_uri() . '/scripts/index.min.js', array(), '1.0.0', true );
 
 }

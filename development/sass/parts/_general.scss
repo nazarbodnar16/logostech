@@ -1,0 +1,26 @@
+.heading{
+	letter-spacing: 2px;
+	font: 400 70px/72px $font-oswald;
+	margin-bottom: 20px;
+	color: $clr_white;
+}
+.visual{
+	.swiper-slide{
+		height: 500px;
+		background: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+	.baner-description{
+		position: absolute;
+		top: 50%;
+		left: 15px;
+		transform: translateY(-50%);
+		font: 400 24px/36px $font-oswald;
+		color: $clr_white;
+		p{
+			margin-bottom: 20px;
+		}
+	}
+}
