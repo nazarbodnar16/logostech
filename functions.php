@@ -31,7 +31,7 @@ add_theme_support( 'html5', array(
 function my_assets() {
 
 	// Add Google Fonts
-	wp_enqueue_style( 'font', 'https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Quicksand:300,400,500,700' );
+	wp_enqueue_style( 'font', 'https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Quicksand:300,400,500,700|Abel' );
 
 	wp_enqueue_style( 'id-main', get_stylesheet_uri() );
 
@@ -52,6 +52,7 @@ function my_assets() {
 
 	//Custom scripts
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/development/scripts/swiper.min.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/development/scripts/jquery.matchHeight-min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'id-custom-script', get_template_directory_uri() . '/scripts/index.min.js', array(), '1.0.0', true );
 
 }
