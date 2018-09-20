@@ -302,19 +302,34 @@
 .comment-holder{
 	height: 500px;
 	background-size: cover;
+	@media (max-width: 991px){
+		min-height: 250px;
+		height: auto;
+	}
 }
 .comment-slider{
 	font: 700 32px/56px $font-quicksand;
 	color: $clr_white;
 	padding: 100px 0;
+	@media (max-width: 991px){
+		font-size: 16px;
+		line-height: 22px;
+		padding: 50px 0;
+	}
 	ul{
 		list-style: none;
 	}
 	.comment-text{
 		margin-bottom: 65px;
+		@media (max-width: 991px){
+			margin-bottom: 35px;
+		}
 	}
 	.autor{
 		font: 18px/1 $font-abel;
+		@media (max-width: 991px){
+			font-size: 15px;
+		}
 	}
 }
 .swiper-pagination{
