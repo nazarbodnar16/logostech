@@ -250,6 +250,56 @@ get_header(); ?>
     </div>
   </div>
 </div>
+<div class="comment-holder bg-img">
+  <img src="wp-content/themes/logostech/images/commet-slider-bg.png" alt="">
+  <div class="container">
+    <div class="comment-slider swiper-container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="comment-text">
+           <p>
+            The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
+          </p>
+        </div>
+        <div class="autor">Senior DHS / CBP Official</div>
+      </li>
+      <li class="swiper-slide">
+          <div class="comment-text">
+           <p>
+            The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
+          </p>
+        </div>
+        <div class="autor">Senior DHS / CBP Official</div>
+      </li>
+      <li class="swiper-slide">
+          <div class="comment-text">
+           <p>
+            The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
+          </p>
+        </div>
+        <div class="autor">Senior DHS / CBP Official</div>
+      </li>
+      <li class="swiper-slide">
+          <div class="comment-text">
+           <p>
+            The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
+          </p>
+        </div>
+        <div class="autor">Senior DHS / CBP Official</div>
+      </li>
+      <li class="swiper-slide">
+          <div class="comment-text">
+           <p>
+            The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
+          </p>
+        </div>
+        <div class="autor">Senior DHS / CBP Official</div>
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+</div>
 </main><!-- .site-main --><!-- .content-area -->
 
 <?php get_footer(); ?>

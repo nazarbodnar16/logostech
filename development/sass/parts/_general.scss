@@ -299,3 +299,32 @@
 		}
 	}
 }
+.comment-holder{
+	height: 500px;
+	background-size: cover;
+}
+.comment-slider{
+	font: 700 32px/56px $font-quicksand;
+	color: $clr_white;
+	padding: 100px 0;
+	ul{
+		list-style: none;
+	}
+	.comment-text{
+		margin-bottom: 65px;
+	}
+	.autor{
+		font: 18px/1 $font-abel;
+	}
+}
+.swiper-pagination{
+	text-align: left;
+}
+.swiper-pagination-bullet{
+	background: $clr_white;
+	opacity: .3;
+}
+.swiper-pagination-bullet-active{
+	background: $clr_white;
+	opacity: 1;
+}
