@@ -1,3 +1,4 @@
+jQuery =$;
 $(window).load(function () {
     $(".loader").delay(600).fadeOut("slow");
 });
