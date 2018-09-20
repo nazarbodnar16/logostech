@@ -49,7 +49,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="swiper-slide bg-img">
-      <img src="wp-content/themes/logostech/images/Kestrel-Block-II.png" alt="">
+      <img src="wp-content/themes/logostech/images/4.jpg" alt="">
       <div class="container h-100">
         <div class="baner-description">
           <strong class="heading">Kestrel Block II </strong>

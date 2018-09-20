@@ -21,6 +21,12 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
+		&.swiper-slide-active{
+			.baner-description{
+				opacity: 1;
+				top: 50%;
+			}
+		}
 		@media (max-width: 767px){
 			height: 400px;
 			&:before{
@@ -37,12 +43,17 @@
 	}
 	.baner-description{
 		position: absolute;
-		top: 50%;
+		top: 100%;
+		opacity: 0;
 		left: 15px;
 		transform: translateY(-50%);
 		font: 400 24px/36px $font-oswald;
 		color: $clr_white;
 		max-width: 500px;
+		-webkit-transition:  .3s ease-in-out;
+		-moz-transition:  .3s ease-in-out;
+		-ms-transition:  .3s ease-in-out;
+		-o-transition:  .3s ease-in-out;
 		@media (max-width: 767px){
 			right: 15px;
 			max-width: 100%;
@@ -171,6 +182,7 @@
 		width: 10px;
 		border-top: 2px solid #000;
 		border-right: 2px solid #000;
+		outline: none;
 		@media (max-width: 768px){
 			display: none;
 		}

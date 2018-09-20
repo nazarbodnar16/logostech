@@ -27,14 +27,22 @@ $(document).ready(function () {
         $('body').removeClass('search-opened');
     });
 
-    var swiper = new Swiper('.baner-slider', {});
+    var swiper = new Swiper('.baner-slider', {
+      effect: 'fade',
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+    });
 
 
     var swiper_product = new Swiper('.product-slider', {
       slidesPerView: 4,
       spaceBetween: 30,
-      prevButton: '.swiper-button-prev',
-      nextButton: '.swiper-button-next',
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       breakpoints: {
 
         480: {
