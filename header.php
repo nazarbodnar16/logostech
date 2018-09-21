@@ -20,7 +20,7 @@
     <div class="container clearfix">
      <span class="logo">
       <a href="">
-        <img src="wp-content/themes/logostech/logo.png" alt="">
+        <img src="/wp-content/themes/logostech/logo.png" alt="">
       </a>
     </span>
     <div class="header-right-box clearfix">

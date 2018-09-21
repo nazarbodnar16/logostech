@@ -57,6 +57,9 @@
         text-transform: uppercase;
         color: $clr_gray;
         font-size: 14px;
+        &:hover{
+          color: $clr_white;
+        }
       }
     }
   }
