@@ -98,79 +98,127 @@ get_header(); ?>
       <ul class="product-list swiper-wrapper">
         <li class="swiper-slide">
           <a href="">
-            <div class="img bg-img"><img src="wp-content/themes/logostech/images/MMSP.png" alt=""></div>
-            <div class="product-info">
+            <span class="flip-box-front">
+              <div class="img bg-img"><img src="wp-content/themes/logostech/images/MMSP.png" alt=""></div>
+              <div class="product-info">
+                <h2 class="product-name">MMSP</h2>
+                <p>Platform Agnostic Multi-Sensor Pod</p>
+              </div>
+            </span>
+            <div class="hover-img-box bg-img">
+              <img src="wp-content/themes/logostech/images/mmsp-hover.jpg" alt="image description">
+              <span class="learn-more">LEARN MORE ABOUT MMSP</span>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="">
+            <span class="flip-box-front">
+              <div class="img bg-img"><img src="wp-content/themes/logostech/images/Serenity.png" alt=""></div>
+              <div class="product-info">
+                <h2 class="product-name">Serenity</h2>
+                <p>Aerostat or mast mounted dual fire detection system</p>
+              </div>
+            </span>
+            <div class="hover-img-box bg-img">
+              <img src="wp-content/themes/logostech/images/serenity-hover.jpg" alt="image description">
+              <span class="learn-more">LEARN MORE ABOUT SERENITY</span>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="">
+            <span class="flip-box-front">
+              <div class="img bg-img"><img src="wp-content/themes/logostech/images/Redkite-I.png" alt=""></div>
+              <div class="product-info">
+                <h2 class="product-name">Redkite-I</h2>
+                <p>Powerful Wide-Area Motion Imagery in a Small Group 3 UAS</p>
+              </div>
+            </span>
+            <div class="hover-img-box bg-img">
+              <img src="wp-content/themes/logostech/images/redkite-1-hover.jpg" alt="image description">
+              <span class="learn-more">LEARN MORE ABOUT REDKITE-I</span>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="">
+            <span class="flip-box-front">
+              <div class="img bg-img"><img src="wp-content/themes/logostech/images/Redkite.png" alt=""></div>
+              <div class="product-info">
+                <h2 class="product-name">Redkite</h2>
+                <p>Lightweight Wide-Area Motion Imagery System for Aircraft</p>
+              </div>
+            </span>
+            <div class="hover-img-box bg-img">
+              <img src="wp-content/themes/logostech/images/redkite-hover.jpg" alt="image description">
+              <span class="learn-more">LEARN MORE ABOUT REDKITE</span>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="">
+            <span class="flip-box-front">
+             <div class="img bg-img"><img src="wp-content/themes/logostech/images/Kestrel-Block-II.png" alt=""></div>
+             <div class="product-info">
               <h2 class="product-name">Kestrel block II</h2>
               <p>Lightweight day and night aerostat mounted WAMI system</p>
             </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
-            <div class="img bg-img"><img src="wp-content/themes/logostech/images/Serenity.png" alt=""></div>
-            <div class="product-info">
-              <h2 class="product-name">Simera</h2>
-              <p>Lightweight aerostat mounted wide-area motion system</p>
+          </span>
+          <div class="hover-img-box bg-img">
+              <img src="wp-content/themes/logostech/images/kestrel-hover.jpg" alt="image description">
+              <span class="learn-more">LEARN MORE ABOUT KESTREL BLOCK II</span>
             </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
-            <div class="img bg-img"><img src="wp-content/themes/logostech/images/Redkite-I.png" alt=""></div>
-            <div class="product-info">
-              <h2 class="product-name">Redkite-I</h2>
-              <p>Powerful Wide-Area Motion Imagery in a Small Group 3 UAS</p>
-            </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
-            <div class="img bg-img"><img src="wp-content/themes/logostech/images/Redkite.png" alt=""></div>
-            <div class="product-info">
-              <h2 class="product-name">Redkite</h2>
-              <p>Lightweight Wide-Area Motion Imagery System for Aircraft</p>
-            </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
-            <div class="img bg-img"><img src="wp-content/themes/logostech/images/Kestrel-Block-II.png" alt=""></div>
-            <div class="product-info">
-              <h2 class="product-name">Kestrel block II</h2>
-              <p>Lightweight day and night aerostat mounted WAMI system</p>
-            </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
+        </a>
+      </li>
+      <li class="swiper-slide">
+        <a href="">
+          <span class="flip-box-front">
             <div class="img bg-img"><img src="wp-content/themes/logostech/images/Simera.png" alt=""></div>
             <div class="product-info">
               <h2 class="product-name">Simera</h2>
               <p>Lightweight aerostat mounted wide-area motion system</p>
             </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
+          </span>
+          <div class="hover-img-box bg-img">
+              <img src="wp-content/themes/logostech/images/simera-hover.jpg" alt="image description">
+              <span class="learn-more">LEARN MORE ABOUT Simera</span>
+            </div>
+        </a>
+      </li>
+      <li class="swiper-slide">
+        <a href="">
+          <span class="flip-box-front">
             <div class="img bg-img"><img src="wp-content/themes/logostech/images/SilentHawk.png" alt=""></div>
             <div class="product-info">
-              <h2 class="product-name">Redkite-I</h2>
-              <p>Powerful Wide-Area Motion Imagery in a Small Group 3 UAS</p>
+              <h2 class="product-name">SilentHawk</h2>
+              <p>Hybrid-Electric Military Motorcycle</p>
             </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
+          </span>
+          <div class="hover-img-box bg-img">
+              <img src="wp-content/themes/logostech/images/silenthawk-hover.jpg" alt="image description">
+              <span class="learn-more">LEARN MORE ABOUT SILENTHAWK</span>
+            </div>
+        </a>
+      </li>
+      <li class="swiper-slide">
+        <a href="">
+          <span class="flip-box-front">
             <div class="img bg-img"><img src="wp-content/themes/logostech/images/Redkite.png" alt=""></div>
             <div class="product-info">
               <h2 class="product-name">Redkite</h2>
               <p>Lightweight Wide-Area Motion Imagery System for Aircraft</p>
             </div>
-          </a>
-        </li>
-      </ul>
-    </div>
+          </span>
+          <div class="hover-img-box bg-img">
+              <img src="wp-content/themes/logostech/images/redkite-hover.jpg" alt="image description">
+              <span class="learn-more">LEARN MORE ABOUT REDKITE</span>
+            </div>
+        </a>
+      </li>
+    </ul>
   </div>
+</div>
 </div>
 </div>
 <div class="expeertise">
@@ -264,40 +312,40 @@ get_header(); ?>
         <div class="autor">Senior DHS / CBP Official</div>
       </li>
       <li class="swiper-slide">
-          <div class="comment-text">
-           <p>
-            The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
-          </p>
-        </div>
-        <div class="autor">Senior DHS / CBP Official</div>
-      </li>
-      <li class="swiper-slide">
-          <div class="comment-text">
-           <p>
-            The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
-          </p>
-        </div>
-        <div class="autor">Senior DHS / CBP Official</div>
-      </li>
-      <li class="swiper-slide">
-          <div class="comment-text">
-           <p>
-            The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
-          </p>
-        </div>
-        <div class="autor">Senior DHS / CBP Official</div>
-      </li>
-      <li class="swiper-slide">
-          <div class="comment-text">
-           <p>
-            The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
-          </p>
-        </div>
-        <div class="autor">Senior DHS / CBP Official</div>
-      </li>
-    </ul>
-    <div class="swiper-pagination"></div>
+        <div class="comment-text">
+         <p>
+          The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
+        </p>
+      </div>
+      <div class="autor">Senior DHS / CBP Official</div>
+    </li>
+    <li class="swiper-slide">
+      <div class="comment-text">
+       <p>
+        The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
+      </p>
+    </div>
+    <div class="autor">Senior DHS / CBP Official</div>
+  </li>
+  <li class="swiper-slide">
+    <div class="comment-text">
+     <p>
+      The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
+    </p>
   </div>
+  <div class="autor">Senior DHS / CBP Official</div>
+</li>
+<li class="swiper-slide">
+  <div class="comment-text">
+   <p>
+    The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
+  </p>
+</div>
+<div class="autor">Senior DHS / CBP Official</div>
+</li>
+</ul>
+<div class="swiper-pagination"></div>
+</div>
 </div>
 </div>
 </main><!-- .site-main --><!-- .content-area -->
