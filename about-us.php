@@ -1,28 +1,86 @@
 <?php
 /*
-Template Name: Operations support
+Template Name: about us
 */
 get_header(); ?>
 <main>
 	<div class="top-baner bg-img support-baner">
-		<img src="/wp-content/themes/logostech/images/baner1.png" alt="">
+		<img src="/wp-content/themes/logostech/images/about-us-bg.png" alt="">
 		<div class="container">
 			<div class="heading-box">
-				<h1 class="h1">OPERATIONS SUPPORT</h1>
+				<h1 class="h1">The Art of Science</h1>
 			</div>
 		</div>
 	</div>
-	<div class="text-block">
+	<div class="text-block mod-about-page">
 		<div class="text-container tac">
-			<h2 class="h2">Supporting Mission-Critical Objectives Worldwide</h2>
-			<p>Logos Operations delivers adaptable, affordable operations support – from daily intelligence gathering to threat response – for military and government missions worldwide.</p>
-			<p>As a leader in the wide-area motion imagery (WAMI) sensor field, Logos Technologies goes beyond just developing sophisticated systems. We help engineer mission success by providing our domestic and international customers with a wide range of operational services that enable them to extract maximum value from their systems.</p>
-			<p>Drawing from our deep experience in the military, intelligence community, and scientific research, Logos Technologies provides such services as intelligence collection and analysis, operations and maintenance support, logistics management, and sensor and analytics training services.</p>
-			<p>Logos Technologies’ experts can be deployed rapidly to any location around the globe to support a variety of critical missions. These operators are expertly trained, able to adapt to a variety of needs and expectations, and are skilled in providing professional and high quality operational support.</p>
+			<h2 class="h2">OUR STORY</h2>
+			<p>Founded in 1996, Logos Technologies LLC is a defense and technology company committed to delivering reliable and innovative solutions that meet customer needs. Our company specializes in advanced sensors and platforms, analytics and multi-source dataset processing, and biochemicals. We have demonstrated expertise in technology development and comprehensive support services, including:</p>
+			<ul class="ul list-chek">
+				<li>Wide-Area Motion Imagery</li>
+				<li>Advanced Analytics</li>
+				<li>Large Data Processing and Storage</li>
+				<li>Sensor Operations, Maintenance and </li>
+				<li>Training</li>
+				<li>Analytical Training and Support</li>
+				<li>R&amp;D Lifecycle Services</li>
+			</ul>
+			<p>Logos engineers, operators, analysts, and support staff are trained experts, with years of experience behind them, and our executives are respected leaders in their fields.</p>
 		</div>
 	</div>
 	<div class="img-box bg-img">
-		<img src="/wp-content/themes/logostech/images/img-box-1.png" alt="">
+		<img src="/wp-content/themes/logostech/images/about-img-bg.png" alt="">
+	</div>
+	<div class="supporting mod-about-page">
+		<div class="container">
+			<div class="headline clearfix">
+				<ul class="headline-list">
+					<li>Explore Our Capabilities</li>
+				</ul>
+				<div class="hr-box"><div class="hr"></div></div>
+			</div>
+			<div class="row support-list">
+				<div class="col-md-4">
+					<div class="support-item tac">
+						<a href="">
+							<div class="img">
+								<img src="/wp-content/themes/logostech/images/about-page-img1.png" alt="">
+							</div>
+							<div class="product-info">
+								<h2 class="product-name">Markets </h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="support-item tac">
+						<a href="">
+							<div class="img">
+								<img src="/wp-content/themes/logostech/images/about-page-img2.png" alt="">
+							</div>
+							<div class="product-info">
+								<h2 class="product-name">Products</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="support-item tac">
+						<a href="">
+							<div class="img">
+								<img src="/wp-content/themes/logostech/images/about-page-img3.png" alt="">
+							</div>
+							<div class="product-info">
+								<h2 class="product-name">Services </h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							</div>
+						</a>
+					</div>
+				</div>   
+			</div>
+		</div>
 	</div>
 	<div class="operations">
 		<div class="container">

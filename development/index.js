@@ -72,6 +72,7 @@ $(document).ready(function () {
   });
   $(function() {
     $('.product-slider .swiper-slide').matchHeight();
+    $('.services-list .services-list-item .description .h4').matchHeight();
   });
   
 });
