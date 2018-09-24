@@ -19,7 +19,7 @@
   <div id="header">
     <div class="container clearfix">
      <span class="logo">
-      <a href="">
+      <a href="/">
         <img src="/wp-content/themes/logostech/logo.png" alt="">
       </a>
     </span>
@@ -27,7 +27,7 @@
       <nav class="main-nav">
         <ul>
           <li><a href="">About</a></li>
-          <li><a href="">Products &amp; Services</a></li>
+          <li><a href="/services-page">Products &amp; Services</a></li>
           <li><a href="">Markets</a></li>
           <li><a href="">Success Stories</a></li>
           <li><a href="">Careers</a></li>
