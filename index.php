@@ -99,7 +99,7 @@ get_header(); ?>
         <li class="swiper-slide">
           <a href="">
             <span class="flip-box-front">
-              <div class="img bg-img"><img src="wp-content/themes/logostech/images/MMSP.png" alt=""></div>
+              <div class="img"><img src="wp-content/themes/logostech/images/MMSP.png" alt=""></div>
               <div class="product-info">
                 <h2 class="product-name">MMSP</h2>
                 <p>Platform Agnostic Multi-Sensor Pod</p>
@@ -114,7 +114,7 @@ get_header(); ?>
         <li class="swiper-slide">
           <a href="">
             <span class="flip-box-front">
-              <div class="img bg-img"><img src="wp-content/themes/logostech/images/Serenity.png" alt=""></div>
+              <div class="img"><img src="wp-content/themes/logostech/images/Serenity.png" alt=""></div>
               <div class="product-info">
                 <h2 class="product-name">Serenity</h2>
                 <p>Aerostat or mast mounted dual fire detection system</p>
@@ -129,7 +129,7 @@ get_header(); ?>
         <li class="swiper-slide">
           <a href="">
             <span class="flip-box-front">
-              <div class="img bg-img"><img src="wp-content/themes/logostech/images/Redkite-I.png" alt=""></div>
+              <div class="img"><img src="wp-content/themes/logostech/images/Redkite-I.png" alt=""></div>
               <div class="product-info">
                 <h2 class="product-name">Redkite-I</h2>
                 <p>Powerful Wide-Area Motion Imagery in a Small Group 3 UAS</p>
@@ -144,7 +144,7 @@ get_header(); ?>
         <li class="swiper-slide">
           <a href="">
             <span class="flip-box-front">
-              <div class="img bg-img"><img src="wp-content/themes/logostech/images/Redkite.png" alt=""></div>
+              <div class="img"><img src="wp-content/themes/logostech/images/Redkite.png" alt=""></div>
               <div class="product-info">
                 <h2 class="product-name">Redkite</h2>
                 <p>Lightweight Wide-Area Motion Imagery System for Aircraft</p>
@@ -159,7 +159,7 @@ get_header(); ?>
         <li class="swiper-slide">
           <a href="">
             <span class="flip-box-front">
-             <div class="img bg-img"><img src="wp-content/themes/logostech/images/Kestrel-Block-II.png" alt=""></div>
+             <div class="img"><img src="wp-content/themes/logostech/images/Kestrel-Block-II.png" alt=""></div>
              <div class="product-info">
               <h2 class="product-name">Kestrel block II</h2>
               <p>Lightweight day and night aerostat mounted WAMI system</p>
@@ -174,7 +174,7 @@ get_header(); ?>
       <li class="swiper-slide">
         <a href="">
           <span class="flip-box-front">
-            <div class="img bg-img"><img src="wp-content/themes/logostech/images/Simera.png" alt=""></div>
+            <div class="img"><img src="wp-content/themes/logostech/images/Simera.png" alt=""></div>
             <div class="product-info">
               <h2 class="product-name">Simera</h2>
               <p>Lightweight aerostat mounted wide-area motion system</p>
@@ -189,7 +189,7 @@ get_header(); ?>
       <li class="swiper-slide">
         <a href="">
           <span class="flip-box-front">
-            <div class="img bg-img"><img src="wp-content/themes/logostech/images/SilentHawk.png" alt=""></div>
+            <div class="img"><img src="wp-content/themes/logostech/images/SilentHawk.png" alt=""></div>
             <div class="product-info">
               <h2 class="product-name">SilentHawk</h2>
               <p>Hybrid-Electric Military Motorcycle</p>
@@ -204,7 +204,7 @@ get_header(); ?>
       <li class="swiper-slide">
         <a href="">
           <span class="flip-box-front">
-            <div class="img bg-img"><img src="wp-content/themes/logostech/images/Redkite.png" alt=""></div>
+            <div class="img"><img src="wp-content/themes/logostech/images/Redkite.png" alt=""></div>
             <div class="product-info">
               <h2 class="product-name">Redkite</h2>
               <p>Lightweight Wide-Area Motion Imagery System for Aircraft</p>
