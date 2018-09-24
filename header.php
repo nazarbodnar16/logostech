@@ -26,7 +26,7 @@
     <div class="header-right-box clearfix">
       <nav class="main-nav">
         <ul>
-          <li><a href="">About</a></li>
+          <li><a href="/about-us">About</a></li>
           <li><a href="/services-page">Products &amp; Services</a></li>
           <li><a href="">Markets</a></li>
           <li><a href="">Success Stories</a></li>

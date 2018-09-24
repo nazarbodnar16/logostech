@@ -2,7 +2,7 @@
 /*
 Template Name: Main page
 */
-global $webshowcase;
+
 get_header(); ?>
 
 <header class="main-head parallax" style="background-image: url(

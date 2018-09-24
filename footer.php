@@ -1,5 +1,3 @@
-<?php global $webshowcase; ?>
-
 <footer id="footer" class="main-footer">
     <div class="container">
         <div class="top-footer">

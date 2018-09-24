@@ -11,7 +11,7 @@
  *
  * @package webshowcase
  */
-global $webshowcase;
+
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
@@ -19,7 +19,7 @@ get_header(); ?>
     <div class="swiper-container baner-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide bg-img">
-         <img src="wp-content/themes/logostech/images/1.jpg" alt="">
+         <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" alt="">
          <div class="container h-100">
           <div class="baner-description">
            <strong class="heading">Redkite Pod</strong>
@@ -29,7 +29,7 @@ get_header(); ?>
        </div>
      </div>
      <div class="swiper-slide bg-img">
-      <img src="wp-content/themes/logostech/images/2.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" alt="">
       <div class="container h-100">
         <div class="baner-description">
           <strong class="heading">SIMERA</strong>
@@ -39,7 +39,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="swiper-slide bg-img">
-      <img src="wp-content/themes/logostech/images/3.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
       <div class="container h-100">
         <div class="baner-description">
           <strong class="heading">Serenity</strong>
@@ -49,7 +49,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="swiper-slide bg-img">
-      <img src="wp-content/themes/logostech/images/4.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/4.jpg" alt="">
       <div class="container h-100">
         <div class="baner-description">
           <strong class="heading">Kestrel Block II </strong>
@@ -59,7 +59,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="swiper-slide bg-img">
-      <img src="wp-content/themes/logostech/images/5.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
       <div class="container h-100">
         <div class="baner-description">
           <strong class="heading">Redkite-I</strong>
@@ -69,7 +69,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="swiper-slide bg-img">
-      <img src="wp-content/themes/logostech/images/6.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg" alt="">
       <div class="container h-100">
         <div class="baner-description">
           <strong class="heading">The advantage  of wide-area motion imagery</strong>
@@ -99,14 +99,14 @@ get_header(); ?>
         <li class="swiper-slide">
           <a href="">
             <span class="flip-box-front">
-              <div class="img"><img src="wp-content/themes/logostech/images/MMSP.png" alt=""></div>
+              <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/MMSP.png" alt=""></div>
               <div class="product-info">
                 <h2 class="product-name">MMSP</h2>
                 <p>Platform Agnostic Multi-Sensor Pod</p>
               </div>
             </span>
             <div class="hover-img-box bg-img">
-              <img src="wp-content/themes/logostech/images/mmsp-hover.jpg" alt="image description">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/mmsp-hover.jpg" alt="image description">
               <span class="learn-more">LEARN MORE ABOUT MMSP</span>
             </div>
           </a>
@@ -114,14 +114,14 @@ get_header(); ?>
         <li class="swiper-slide">
           <a href="">
             <span class="flip-box-front">
-              <div class="img"><img src="wp-content/themes/logostech/images/Serenity.png" alt=""></div>
+              <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Serenity.png" alt=""></div>
               <div class="product-info">
                 <h2 class="product-name">Serenity</h2>
                 <p>Aerostat or mast mounted dual fire detection system</p>
               </div>
             </span>
             <div class="hover-img-box bg-img">
-              <img src="wp-content/themes/logostech/images/serenity-hover.jpg" alt="image description">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/serenity-hover.jpg" alt="image description">
               <span class="learn-more">LEARN MORE ABOUT SERENITY</span>
             </div>
           </a>
@@ -129,14 +129,14 @@ get_header(); ?>
         <li class="swiper-slide">
           <a href="">
             <span class="flip-box-front">
-              <div class="img"><img src="wp-content/themes/logostech/images/Redkite-I.png" alt=""></div>
+              <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Redkite-I.png" alt=""></div>
               <div class="product-info">
                 <h2 class="product-name">Redkite-I</h2>
                 <p>Powerful Wide-Area Motion Imagery in a Small Group 3 UAS</p>
               </div>
             </span>
             <div class="hover-img-box bg-img">
-              <img src="wp-content/themes/logostech/images/redkite-1-hover.jpg" alt="image description">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/redkite-1-hover.jpg" alt="image description">
               <span class="learn-more">LEARN MORE ABOUT REDKITE-I</span>
             </div>
           </a>
@@ -144,14 +144,14 @@ get_header(); ?>
         <li class="swiper-slide">
           <a href="">
             <span class="flip-box-front">
-              <div class="img"><img src="wp-content/themes/logostech/images/Redkite.png" alt=""></div>
+              <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Redkite.png" alt=""></div>
               <div class="product-info">
                 <h2 class="product-name">Redkite</h2>
                 <p>Lightweight Wide-Area Motion Imagery System for Aircraft</p>
               </div>
             </span>
             <div class="hover-img-box bg-img">
-              <img src="wp-content/themes/logostech/images/redkite-hover.jpg" alt="image description">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/redkite-hover.jpg" alt="image description">
               <span class="learn-more">LEARN MORE ABOUT REDKITE</span>
             </div>
           </a>
@@ -159,14 +159,14 @@ get_header(); ?>
         <li class="swiper-slide">
           <a href="">
             <span class="flip-box-front">
-             <div class="img"><img src="wp-content/themes/logostech/images/Kestrel-Block-II.png" alt=""></div>
+             <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Kestrel-Block-II.png" alt=""></div>
              <div class="product-info">
               <h2 class="product-name">Kestrel block II</h2>
               <p>Lightweight day and night aerostat mounted WAMI system</p>
             </div>
           </span>
           <div class="hover-img-box bg-img">
-              <img src="wp-content/themes/logostech/images/kestrel-hover.jpg" alt="image description">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/kestrel-hover.jpg" alt="image description">
               <span class="learn-more">LEARN MORE ABOUT KESTREL BLOCK II</span>
             </div>
         </a>
@@ -174,14 +174,14 @@ get_header(); ?>
       <li class="swiper-slide">
         <a href="">
           <span class="flip-box-front">
-            <div class="img"><img src="wp-content/themes/logostech/images/Simera.png" alt=""></div>
+            <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Simera.png" alt=""></div>
             <div class="product-info">
               <h2 class="product-name">Simera</h2>
               <p>Lightweight aerostat mounted wide-area motion system</p>
             </div>
           </span>
           <div class="hover-img-box bg-img">
-              <img src="wp-content/themes/logostech/images/simera-hover.jpg" alt="image description">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/simera-hover.jpg" alt="image description">
               <span class="learn-more">LEARN MORE ABOUT Simera</span>
             </div>
         </a>
@@ -189,14 +189,14 @@ get_header(); ?>
       <li class="swiper-slide">
         <a href="">
           <span class="flip-box-front">
-            <div class="img"><img src="wp-content/themes/logostech/images/SilentHawk.png" alt=""></div>
+            <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/SilentHawk.png" alt=""></div>
             <div class="product-info">
               <h2 class="product-name">SilentHawk</h2>
               <p>Hybrid-Electric Military Motorcycle</p>
             </div>
           </span>
           <div class="hover-img-box bg-img">
-              <img src="wp-content/themes/logostech/images/silenthawk-hover.jpg" alt="image description">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/silenthawk-hover.jpg" alt="image description">
               <span class="learn-more">LEARN MORE ABOUT SILENTHAWK</span>
             </div>
         </a>
@@ -204,14 +204,14 @@ get_header(); ?>
       <li class="swiper-slide">
         <a href="">
           <span class="flip-box-front">
-            <div class="img"><img src="wp-content/themes/logostech/images/Redkite.png" alt=""></div>
+            <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Redkite.png" alt=""></div>
             <div class="product-info">
               <h2 class="product-name">Redkite</h2>
               <p>Lightweight Wide-Area Motion Imagery System for Aircraft</p>
             </div>
           </span>
           <div class="hover-img-box bg-img">
-              <img src="wp-content/themes/logostech/images/redkite-hover.jpg" alt="image description">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/redkite-hover.jpg" alt="image description">
               <span class="learn-more">LEARN MORE ABOUT REDKITE</span>
             </div>
         </a>
@@ -223,7 +223,7 @@ get_header(); ?>
 </div>
 <div class="expeertise">
   <div class="expeertise-img bg-img">
-    <img src="wp-content/themes/logostech/images/expertise.png" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/expertise.png" alt="">
   </div>
   <div class="container">
     <div class="container">
@@ -254,7 +254,7 @@ get_header(); ?>
         <div class="support-item tac">
           <a href="">
             <div class="img">
-              <img src="wp-content/themes/logostech/images/sec1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/sec1.png" alt="">
             </div>
             <div class="product-info">
               <h2 class="product-name">Defense</h2>
@@ -267,7 +267,7 @@ get_header(); ?>
         <div class="support-item tac">
           <a href="">
             <div class="img">
-              <img src="wp-content/themes/logostech/images/sec2.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/sec2.png" alt="">
             </div>
             <div class="product-info">
               <h2 class="product-name">Homeland Security</h2>
@@ -280,7 +280,7 @@ get_header(); ?>
         <div class="support-item tac">
           <a href="">
             <div class="img">
-              <img src="wp-content/themes/logostech/images/sec3.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/sec3.png" alt="">
             </div>
             <div class="product-info">
               <h2 class="product-name">Law Enforcement</h2>
@@ -299,7 +299,7 @@ get_header(); ?>
   </div>
 </div>
 <div class="comment-holder bg-img">
-  <img src="wp-content/themes/logostech/images/commet-slider-bg.png" alt="">
+  <img src="<?php echo get_template_directory_uri(); ?>/images/commet-slider-bg.png" alt="">
   <div class="container">
     <div class="comment-slider swiper-container">
       <ul class="swiper-wrapper">
