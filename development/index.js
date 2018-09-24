@@ -70,9 +70,37 @@ $(document).ready(function () {
       }
     }
   });
+
+  var swiper_product = new Swiper('.recent-post-slider', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      991: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    }
+  });
+
   $(function() {
     $('.product-slider .swiper-slide').matchHeight();
     $('.services-list .services-list-item .description .h4').matchHeight();
+    $('.leadership-list .leadership-list-item  .description .holder').matchHeight();
+    $('.recent-post-list li  .description .holder').matchHeight();
+
   });
   
 });

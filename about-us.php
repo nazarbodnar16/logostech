@@ -82,137 +82,243 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-	<div class="operations">
+	<div class="our-services leadership">
 		<div class="container">
 			<div class="headline clearfix">
 				<ul class="headline-list">
-					<li>Operational Expertise</li>
+					<li>leadership</li>
 				</ul>
 				<div class="hr-box"><div class="hr"></div></div>
 			</div>
-			<div class="operations-list">
-				<div class="row">
-					<div class="col-md-4">
-						<h3 class="h2 red-text">Operations and Maintenance</h3>
-						<ul class="ul list-chek">
-							<li>Technology support</li>
-							<li>Field operations</li>
-							<li>Logistics management</li>
-							<li>Equipment maintenance and support</li>
-							<li>Critical mission support</li>
-							<li>Hardware and software procurement</li>
-						</ul>
+			<div class="services-list leadership-list row">
+				<div class="col-md-4">
+					<div class="services-list-item leadership-list-item">
+						<a href="">
+							<span class="description clearfix">
+								<span class="holder">
+									<h3 class="services-name h4 red-text">Greg D. Poe, Ph.D.</h3>
+									<p>Chief Executive Officer</p>
+								</span>
+								<span class="default-btn">Full BIO</span>
+							</span>
+						</a>
 					</div>
-					<div class="col-md-4">
-						<h3 class="h2 red-text">Analytics</h3>
-						<ul class="ul list-chek">
-							<li>Deployed analysis teams</li>
-							<li>Fusion of disparate and unconditioned data</li>
-							<li>Operational and intelligence integration</li>
-							<li>Tradecraft development and refinement</li>
-							<li>Situational awareness</li>
-						</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="services-list-item leadership-list-item">
+						<a href="">
+							<span class="description clearfix">
+								<span class="holder">
+									<h3 class="services-name h4 red-text">John I. Abernethy</h3>
+									<p>Chief Operating Officer</p>
+								</span>
+								<span class="default-btn">Full BIO</span>
+							</span>
+						</a>
 					</div>
-					<div class="col-md-4">
-						<h3 class="h2 red-text">Training</h3>
-						<ul class="ul list-chek">
-							<li>On-sit  e CONUS and OCONUS training teams</li>
-							<li>Rapidly deployable, multidisciplinary training teams</li>
-							<li>Mission-relevant, multi-faceted training modules</li>
-						</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="services-list-item leadership-list-item">
+						<a href="">
+							<span class="description clearfix">
+								<span class="holder">
+									<h3 class="services-name h4 red-text">Alan Murdoch</h3>
+									<p>Vice President of International Programs</p>
+								</span>
+								<span class="default-btn">Full BIO</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="services-list-item leadership-list-item">
+						<a href="">
+							<span class="description clearfix">
+								<span class="holder">
+									<h3 class="services-name h4 red-text">John E. Marion, Ph.D.</h3>
+									<p>President</p>
+								</span>
+								<span class="default-btn">Full BIO</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="services-list-item leadership-list-item">
+						<a href="">
+							<span class="description clearfix">
+								<span class="holder">
+									<h3 class="services-name h4 red-text">David J. Fields, Ph.D.</h3>
+									<p>Vice President of Technology</p>
+								</span>
+								<span class="default-btn">Full BIO</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="services-list-item leadership-list-item">
+						<a href="">
+							<span class="description clearfix">
+								<span class="holder">
+									<h3 class="services-name h4 red-text">Douglas H. Rombough</h3>
+									<p>Vice President of Business Development</p>
+								</span>
+								<span class="default-btn">Full BIO</span>
+							</span>
+						</a>
 					</div>
 				</div>
 			</div>
-			<div class="more-info tac">
-				<p>For more information on Operational Support for Sensor Systems, please <a href="mailto:" class="red-text">email us.</a></p>
-			</div>
-			<div class="documents">
-				<h3 class="h2 red-text">Support Documents</h3>
-				<p>Click file name to download</p>
-				<a class="download-file clearfix" href=""><span class="ico"><img src="/wp-content/themes/logostech/images/pdf.png" alt=""></span>Operations Support Brochure</a>
-				<a class="download-file clearfix" href=""><span class="ico"><img src="/wp-content/themes/logostech/images/pdf.png" alt=""></span>Wide-Area Systems Overview</a>
-			</div>
 		</div>
 	</div>
-	<div class="request expeertise">
-		<div class="request-img bg-img">
-			<img src="/wp-content/themes/logostech/images/request-bg.png" alt="">
-		</div>
+	<div class="codes" style="background: url('/wp-content/themes/logostech/images/code-bg.png') no-repeat 50%">
 		<div class="container">
-			<div class="request-form expeertise-details">
-				<form action="">
-					<input type="text" class="form-control" placeholder="Company name">
-					<input type="text" class="form-control" placeholder="First Name">
-					<input type="text" class="form-control" placeholder="Last Name">
-					<input type="text" class="form-control" placeholder="Country">
-					<input type="text" class="form-control" placeholder="Email">
-					<input type="text" class="form-control" placeholder="PHONE">
-					<button  class="default-btn">REQUEST INFORMATION</button>
-				</form>
-			</div>
+			<h3 class="h3">NAICS Codes</h3>
+			<ul class="codes-list">
+				<li class="clearfix">
+					<span class="code">334511*</span>
+					<span class="code-desc">Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing</span>
+				</li>
+				<li class="clearfix">
+					<span class="code">541330</span>
+					<span class="code-desc">Engineering Services</span>
+				</li>
+				<li class="clearfix">
+					<span class="code">541511</span>
+					<span class="code-desc">Custom Computer Programming Services</span>
+				</li>
+				<li class="clearfix">
+					<span class="code">541513</span>
+					<span class="code-desc">Computer Facilities Management Services</span>
+				</li>
+				<li class="clearfix">
+					<span class="code">541690</span>
+					<span class="code-desc">Other Scientific and Technical Consulting Services</span>
+				</li>
+				<li class="clearfix">
+					<span class="code">541711*</span>
+					<span class="code-desc">Research and Development in Biotechnology</span>
+				</li>
+				<li class="clearfix">
+					<span class="code">541715*</span>
+					<span class="code-desc">Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)</span>
+				</li>
+			</ul>
+			<p>*Logos qualifies as a small business under this NAICS code.</p>
 		</div>
 	</div>
-	<div class="our-services">
+	<div class="resent-post">
 		<div class="container">
 			<div class="headline clearfix">
 				<ul class="headline-list">
-					<li>Our services</li>
+					<li>recent post</li>
 				</ul>
 				<div class="hr-box"><div class="hr"></div></div>
 			</div>
-			<div class="services-list row">
-				<div class="col-md-3">
-					<div class="services-list-item">
-						<a href="">
-							<span class="img bg-img">
-								<img src="/wp-content/themes/logostech/images/services1.png" alt="">
-							</span>
-							<span class="description clearfix">
-								<h3 class="services-name h4 red-text">LARGE DATA PROCESSING AND STORAGE</h3>
-								<span class="default-btn">LEARN</span>
-							</span>
-						</a>
-					</div>
+			<div class="recent-post-slider-box">
+				<div class="recent-post-slider swiper-container">
+					<ul class="recent-post-list swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="">
+								<span class="description">
+									<span class="holder">
+										<span class="date">June 5, 2018</span>
+										<h3 class="post-name h4 red-text">Redkite Wide-Area Sensor Flies at Marines Advanced Naval Technology Exercises (ANTX)</h3>
+										<p>Logos Technologies demonstrates wide-area motion imagery for urban operations.</p>
+									</span>
+									<span class="default-btn">LEARN more</span>
+								</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<span class="description">
+									<span class="holder">
+										<span class="date">January 25, 2018</span>
+										<h3 class="post-name h4 red-text">Logos Technologies Wins Government Security News Award for Redkite Wide-Area Airborne Sensor</h3>
+										<p>Announcement comes after Redkite sensor clinches another award, from Aviation Week, in December.</p>
+									</span>
+									<span class="default-btn">LEARN more</span>
+								</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<span class="description">
+									<span class="holder">
+										<span class="date">December 5, 2017</span>
+										<h3 class="post-name h4 red-text">Logos Technologies Wins Coveted Aviation Week Award For Redkite Wide-Area Sensor</h3>
+										<p>Redkite delivers a powerful, wide-area ISR capability in a small, lightweight form-factor.</p>
+									</span>
+									<span class="default-btn">LEARN more</span>
+								</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<span class="description">
+									<span class="holder">
+										<span class="date">October 3, 2017</span>
+										<h3 class="post-name h4 red-text">First: Logos Brings Wide-Area Sensor for Integrator UAS, Low-Acoustic Bike to AUSA Expo</h3>
+										<p>New Redkite delivers powerful imaging with system that fits inside payload bay of small UAS.</p>
+									</span>
+									<span class="default-btn">LEARN more</span>
+								</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<span class="description">
+									<span class="holder">
+										<span class="date">June 5, 2018</span>
+										<h3 class="post-name h4 red-text">Redkite Wide-Area Sensor Flies at Marines Advanced Naval Technology Exercises (ANTX)</h3>
+										<p>Logos Technologies demonstrates wide-area motion imagery for urban operations.</p>
+									</span>
+									<span class="default-btn">LEARN more</span>
+								</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<span class="description">
+									<span class="holder">
+										<span class="date">January 25, 2018</span>
+										<h3 class="post-name h4 red-text">Logos Technologies Wins Government Security News Award for Redkite Wide-Area Airborne Sensor</h3>
+										<p>Announcement comes after Redkite sensor clinches another award, from Aviation Week, in December.</p>
+									</span>
+									<span class="default-btn">LEARN more</span>
+								</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<span class="description">
+									<span class="holder">
+										<span class="date">December 5, 2017</span>
+										<h3 class="post-name h4 red-text">Logos Technologies Wins Coveted Aviation Week Award For Redkite Wide-Area Sensor</h3>
+										<p>Redkite delivers a powerful, wide-area ISR capability in a small, lightweight form-factor.</p>
+									</span>
+									<span class="default-btn">LEARN more</span>
+								</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<span class="description">
+									<span class="holder">
+										<span class="date">October 3, 2017</span>
+										<h3 class="post-name h4 red-text">First: Logos Brings Wide-Area Sensor for Integrator UAS, Low-Acoustic Bike to AUSA Expo</h3>
+										<p>New Redkite delivers powerful imaging with system that fits inside payload bay of small UAS.</p>
+									</span>
+									<span class="default-btn">LEARN more</span>
+								</span>
+							</a>
+						</li>
+					</ul>
 				</div>
-				<div class="col-md-3">
-					<div class="services-list-item">
-						<a href="">
-							<span class="img bg-img">
-								<img src="/wp-content/themes/logostech/images/services2.png" alt="">
-							</span>
-							<span class="description clearfix">
-								<h3 class="services-name h4 red-text">ADVANCED ANALYTICS</h3>
-								<span class="default-btn">INQUIRE</span>
-							</span>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="services-list-item">
-						<a href="">
-							<span class="img bg-img">
-								<img src="/wp-content/themes/logostech/images/services3.png" alt="">
-							</span>
-							<span class="description clearfix">
-								<h3 class="services-name h4 red-text">OPERATIONS SUPPORT FOR SENSOR SYSTEMS</h3>
-								<span class="default-btn">EXPLORE</span>
-							</span>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="services-list-item">
-						<a href="">
-							<span class="img bg-img">
-								<img src="/wp-content/themes/logostech/images/services4.png" alt="">
-							</span>
-							<span class="description clearfix">
-								<h3 class="services-name h4 red-text">R&D LIFECYCLE SERVICES</h3>
-								<span class="default-btn">VISUALIZE</span>
-							</span>
-						</a>
-					</div>
-				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
 	</div>
