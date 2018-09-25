@@ -5,7 +5,7 @@ Template Name: Operations support
 get_header(); ?>
 <main>
 	<div class="top-baner bg-img support-baner">
-		<img src="/wp-content/themes/logostech/images/baner1.png" alt="">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/baner1.png" alt="">
 		<div class="container">
 			<div class="heading-box">
 				<h1 class="h1">OPERATIONS SUPPORT</h1>
@@ -22,7 +22,7 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="img-box bg-img">
-		<img src="/wp-content/themes/logostech/images/img-box-1.png" alt="">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/img-box-1.png" alt="">
 	</div>
 	<div class="operations">
 		<div class="container">
@@ -71,14 +71,14 @@ get_header(); ?>
 			<div class="documents">
 				<h3 class="h2 red-text">Support Documents</h3>
 				<p>Click file name to download</p>
-				<a class="download-file clearfix" href=""><span class="ico"><img src="/wp-content/themes/logostech/images/pdf.png" alt=""></span>Operations Support Brochure</a>
-				<a class="download-file clearfix" href=""><span class="ico"><img src="/wp-content/themes/logostech/images/pdf.png" alt=""></span>Wide-Area Systems Overview</a>
+				<a class="download-file clearfix" href=""><span class="ico"><img src="<?php echo get_template_directory_uri(); ?>/images/pdf.png" alt=""></span>Operations Support Brochure</a>
+				<a class="download-file clearfix" href=""><span class="ico"><img src="<?php echo get_template_directory_uri(); ?>/images/pdf.png" alt=""></span>Wide-Area Systems Overview</a>
 			</div>
 		</div>
 	</div>
 	<div class="request expeertise">
 		<div class="request-img bg-img">
-			<img src="/wp-content/themes/logostech/images/request-bg.png" alt="">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/request-bg.png" alt="">
 		</div>
 		<div class="container">
 			<div class="request-form expeertise-details">
@@ -107,7 +107,7 @@ get_header(); ?>
 					<div class="services-list-item">
 						<a href="">
 							<span class="img bg-img">
-								<img src="/wp-content/themes/logostech/images/services1.png" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/services1.png" alt="">
 							</span>
 							<span class="description clearfix">
 								<h3 class="services-name h4 red-text">LARGE DATA PROCESSING AND STORAGE</h3>
@@ -120,7 +120,7 @@ get_header(); ?>
 					<div class="services-list-item">
 						<a href="">
 							<span class="img bg-img">
-								<img src="/wp-content/themes/logostech/images/services2.png" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/services2.png" alt="">
 							</span>
 							<span class="description clearfix">
 								<h3 class="services-name h4 red-text">ADVANCED ANALYTICS</h3>
@@ -133,7 +133,7 @@ get_header(); ?>
 					<div class="services-list-item">
 						<a href="">
 							<span class="img bg-img">
-								<img src="/wp-content/themes/logostech/images/services3.png" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/services3.png" alt="">
 							</span>
 							<span class="description clearfix">
 								<h3 class="services-name h4 red-text">OPERATIONS SUPPORT FOR SENSOR SYSTEMS</h3>
@@ -146,7 +146,7 @@ get_header(); ?>
 					<div class="services-list-item">
 						<a href="">
 							<span class="img bg-img">
-								<img src="/wp-content/themes/logostech/images/services4.png" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/services4.png" alt="">
 							</span>
 							<span class="description clearfix">
 								<h3 class="services-name h4 red-text">R&D LIFECYCLE SERVICES</h3>

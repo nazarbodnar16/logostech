@@ -1,11 +1,11 @@
 <?php
 /*
-Template Name: about us
+Template Name:Aabout us
 */
 get_header(); ?>
 <main>
 	<div class="top-baner bg-img support-baner">
-		<img src="/wp-content/themes/logostech/images/about-us-bg.png" alt="">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/about-us-bg.png" alt="">
 		<div class="container">
 			<div class="heading-box">
 				<h1 class="h1">The Art of Science</h1>
@@ -29,7 +29,7 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="img-box bg-img">
-		<img src="/wp-content/themes/logostech/images/about-img-bg.png" alt="">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/about-img-bg.png" alt="">
 	</div>
 	<div class="supporting mod-about-page">
 		<div class="container">
@@ -44,7 +44,7 @@ get_header(); ?>
 					<div class="support-item tac">
 						<a href="">
 							<div class="img">
-								<img src="/wp-content/themes/logostech/images/about-page-img1.png" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/about-page-img1.png" alt="">
 							</div>
 							<div class="product-info">
 								<h2 class="product-name">Markets </h2>
@@ -57,7 +57,7 @@ get_header(); ?>
 					<div class="support-item tac">
 						<a href="">
 							<div class="img">
-								<img src="/wp-content/themes/logostech/images/about-page-img2.png" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/about-page-img2.png" alt="">
 							</div>
 							<div class="product-info">
 								<h2 class="product-name">Products</h2>
@@ -70,7 +70,7 @@ get_header(); ?>
 					<div class="support-item tac">
 						<a href="">
 							<div class="img">
-								<img src="/wp-content/themes/logostech/images/about-page-img3.png" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/about-page-img3.png" alt="">
 							</div>
 							<div class="product-info">
 								<h2 class="product-name">Services </h2>
@@ -172,7 +172,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-	<div class="codes" style="background: url('/wp-content/themes/logostech/images/code-bg.png') no-repeat 50%">
+	<div class="codes" style="background: url('<?php echo get_template_directory_uri(); ?>/images/code-bg.png') no-repeat 50%">
 		<div class="container">
 			<h3 class="h3">NAICS Codes</h3>
 			<ul class="codes-list">
