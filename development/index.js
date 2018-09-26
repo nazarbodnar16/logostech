@@ -100,7 +100,7 @@ $(document).ready(function () {
     $('.services-list .services-list-item .description .h4').matchHeight();
     $('.leadership-list .leadership-list-item  .description .holder').matchHeight();
     $('.recent-post-list li  .description .holder').matchHeight();
-
+    $('.product-list.no-slider .box').matchHeight();
   });
   
 });

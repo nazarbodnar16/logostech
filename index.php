@@ -107,7 +107,6 @@ get_header(); ?>
             </span>
             <div class="hover-img-box bg-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/mmsp-hover.jpg" alt="image description">
-              <span class="learn-more">LEARN MORE ABOUT MMSP</span>
             </div>
           </a>
         </li>
@@ -122,7 +121,6 @@ get_header(); ?>
             </span>
             <div class="hover-img-box bg-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/serenity-hover.jpg" alt="image description">
-              <span class="learn-more">LEARN MORE ABOUT SERENITY</span>
             </div>
           </a>
         </li>
@@ -137,7 +135,6 @@ get_header(); ?>
             </span>
             <div class="hover-img-box bg-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/redkite-1-hover.jpg" alt="image description">
-              <span class="learn-more">LEARN MORE ABOUT REDKITE-I</span>
             </div>
           </a>
         </li>
@@ -152,7 +149,6 @@ get_header(); ?>
             </span>
             <div class="hover-img-box bg-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/redkite-hover.jpg" alt="image description">
-              <span class="learn-more">LEARN MORE ABOUT REDKITE</span>
             </div>
           </a>
         </li>
@@ -167,7 +163,6 @@ get_header(); ?>
           </span>
           <div class="hover-img-box bg-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/kestrel-hover.jpg" alt="image description">
-              <span class="learn-more">LEARN MORE ABOUT KESTREL BLOCK II</span>
             </div>
         </a>
       </li>
@@ -182,7 +177,6 @@ get_header(); ?>
           </span>
           <div class="hover-img-box bg-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/simera-hover.jpg" alt="image description">
-              <span class="learn-more">LEARN MORE ABOUT Simera</span>
             </div>
         </a>
       </li>
@@ -197,7 +191,6 @@ get_header(); ?>
           </span>
           <div class="hover-img-box bg-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/silenthawk-hover.jpg" alt="image description">
-              <span class="learn-more">LEARN MORE ABOUT SILENTHAWK</span>
             </div>
         </a>
       </li>
@@ -212,7 +205,6 @@ get_header(); ?>
           </span>
           <div class="hover-img-box bg-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/redkite-hover.jpg" alt="image description">
-              <span class="learn-more">LEARN MORE ABOUT REDKITE</span>
             </div>
         </a>
       </li>
