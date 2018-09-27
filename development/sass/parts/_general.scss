@@ -1035,3 +1035,92 @@ ul{
 		}
 	}
 }
+
+.product-detail{
+	padding: 70px 0;
+}
+.product-container{
+	max-width: 1024px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.product-box{
+	.img{
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 400px;
+		margin-top: 40px;
+	}
+	.product-description{
+		.img-head{
+			margin-bottom: 15px;
+		}
+		p{
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.tab{
+	padding-top: 50px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	width: 70%;
+	margin: 0 auto;
+	line-height: 1.5;
+	font-weight: 300;
+	color: #888;
+	-webkit-font-smoothing: antialiased;
+}
+.tabs {
+	display: table;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	li {
+		float: left;
+		line-height: 38px;
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+	}
+	a {
+		background-color: #eff0f2;
+		border-bottom: 1px solid #fff;
+		color: #888;
+		font-weight: 500;
+		display: block;
+		letter-spacing: 0;
+		outline: none;
+		padding: 0 20px;
+		text-decoration: none;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		border-bottom: 2px solid #000;
+	}
+}
+.tabs_item {
+	display: none; 
+	padding: 30px 0;
+	h4 {
+		font-weight: bold;
+		color: #000;
+    font-size: 20px;
+	}
+	img {
+		width: 200px;
+		float: left;
+		margin-right: 30px;
+	}
+	&:first-child {display: block;}
+}
+.current a {
+	color: #fff;
+	background: #000;
+}
+
+// END TAB ~~~~~~~~~~~~~~~ (.)(.)

@@ -8,6 +8,7 @@
 	font-family: $font-oswald;
 	display: inline-block;
 	transition: all .3s;
+	cursor: pointer;
 	&.dark-btn{
 		border-color: $clr_black;
 		color: $clr_black;
