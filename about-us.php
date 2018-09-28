@@ -93,7 +93,7 @@ get_header(); ?>
 			<div class="services-list leadership-list row">
 				<div class="col-md-4">
 					<div class="services-list-item leadership-list-item">
-						<a href="">
+						<a href="" data-toggle="modal" data-target="#exampleModal">
 							<span class="description clearfix">
 								<span class="holder">
 									<h3 class="services-name h4 red-text">Greg D. Poe, Ph.D.</h3>

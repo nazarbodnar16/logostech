@@ -164,7 +164,7 @@ ul{
 		display: inline-block;
 		text-transform: uppercase;
 		position: relative;
-		font-family: $font-oswald;
+		font-family: $font-abel;
 		+li{
 			padding-left: 10px;
 			&:before{
@@ -248,6 +248,10 @@ ul{
 		&:hover{
 			a{
 				transform: rotateY(180deg);
+			}
+			.new-label{
+				opacity: 0;
+				visibility: hidden;
 			}
 		}
 		.flip-box-front{
@@ -604,6 +608,16 @@ ul{
 .request{
 	height: 700px;
 	position: relative;
+	position: relative;
+	.text{
+		font: 400 62px/76px $font-oswald;
+		position: absolute;
+		top: 45%;
+		left: 150px;
+		max-width: 500px;
+		transform: translatey(-50%);
+		text-transform: uppercase;
+	}
 	@media (max-width: 991px){
 		height: auto;
 	}
@@ -1050,6 +1064,10 @@ ul{
 		vertical-align: middle;
 		max-width: 400px;
 		margin-top: 40px;
+		@media (max-width: 991px){
+			display: block;
+			margin: 0 auto;
+		}
 	}
 	.product-description{
 		.img-head{
@@ -1060,19 +1078,11 @@ ul{
 		}
 	}
 }
-
 .tab{
-	padding-top: 50px;
-	margin-bottom: 20px;
-	position: relative;
-	overflow: hidden;
-	background: #fff;
-	width: 70%;
-	margin: 0 auto;
-	line-height: 1.5;
-	font-weight: 300;
-	color: #888;
-	-webkit-font-smoothing: antialiased;
+	background: $gray-bg;
+}
+.tab-header{
+	background: $text-color;
 }
 .tabs {
 	display: table;
@@ -1080,47 +1090,143 @@ ul{
 	overflow: hidden;
 	margin: 0;
 	width: 100%;
+	padding-top: 30px;
 	li {
 		float: left;
 		line-height: 38px;
 		overflow: hidden;
 		padding: 0;
 		position: relative;
+		&.current{
+			a{
+				color: $text-color;
+				background: $gray-bg;
+			}
+		}
 	}
 	a {
-		background-color: #eff0f2;
-		border-bottom: 1px solid #fff;
-		color: #888;
-		font-weight: 500;
+		background-color: $text-color;
+		color: $clr_white;
+		text-transform: uppercase;
 		display: block;
-		letter-spacing: 0;
 		outline: none;
-		padding: 0 20px;
+		padding: 17px 49px;
 		text-decoration: none;
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-		border-bottom: 2px solid #000;
+		font: 15px/17px $font-oswald;
 	}
 }
 .tabs_item {
 	display: none; 
-	padding: 30px 0;
-	h4 {
-		font-weight: bold;
-		color: #000;
-    font-size: 20px;
+	padding: 60px 0 30px;
+	.h2{
+		text-transform: uppercase;
+		letter-spacing: 0;
 	}
-	img {
-		width: 200px;
-		float: left;
-		margin-right: 30px;
+	ul{
+		margin-bottom: 30px;
+	}
+	p{
+		margin-bottom: 30px;
+	}
+	.h4{
+		font-family: $font-abel;
 	}
 	&:first-child {display: block;}
 }
-.current a {
-	color: #fff;
-	background: #000;
+.video-box{
+	position: relative;
+	a{
+		display: block;
+		position: relative;
+		border-radius: 10px;
+		overflow: hidden;
+		margin-bottom: 35px;
+		.play-btn{
+			position: absolute;
+			content: '';
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 90px;
+			width: 90px;
+			cursor: pointer;
+			img{
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}	
+	}
+	.video-descr{
+		h4{
+			text-transform: uppercase;
+		}
+	}
+}
+.fancybox-slide{
+	top: 50%!important;
+	left: 50%!important;
 }
 
-// END TAB ~~~~~~~~~~~~~~~ (.)(.)
+.featured-video{
+	padding: 70px 0;
+}
+.img-fluid{
+	width: 100%;
+	display: block;
+}
+.new-label{
+	border: 35px solid transparent;
+	border-top: 35px solid $clr-red;
+	border-right: 35px solid $clr-red;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all .3s;
+	span{
+		position: absolute;
+		transform: rotate(45deg);
+		top: -21px;
+		right: -29px;
+		font-size: 15px;
+		font-family: $font-oswald;
+		text-transform: uppercase;
+		color: $clr_white;
+	}
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 1;
+    background: rgba(0,0,0,.2);
+}
+.modal .close{
+	    position: absolute;
+    top: 18px;
+    right: 15px;
+    font-size: 29px;
+    outline: none;
+}
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out,-o-transform .3s ease-out;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.modal-content {
+    padding: 30px 30px 40px;
+    text-align: center;
+    .h4{
+    	margin-bottom: 20px;
+    }
+}
+.modal-dialog {
+    max-width: 700px;
+    margin: 30px auto;
+}
+a:focus{text-decoration: none;}

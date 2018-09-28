@@ -13,11 +13,6 @@ $(document).ready(function () {
     $('body').toggleClass('menu-opened');
     return false;
     });//btn-open-manu
-  $('.btn-scroll').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-
 
   $('.search-contact-box .seacrh-btn').click(function(){
     $('body').toggleClass('search-opened');
@@ -95,26 +90,26 @@ $(document).ready(function () {
     }
   });
 
-$(document).ready(function() { 
+  $(document).ready(function() { 
 
-  (function ($) { 
-    $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
-    
-    $('.tab ul.tabs li a').click(function (g) { 
-      var tab = $(this).closest('.tab'), 
+    (function ($) { 
+      $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+
+      $('.tab ul.tabs li a').click(function (g) { 
+        var tab = $(this).closest('.tab'), 
         index = $(this).closest('li').index();
-      
-      tab.find('ul.tabs > li').removeClass('current');
-      $(this).closest('li').addClass('current');
-      
-      tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
-      tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
-      
-      g.preventDefault();
-    } );
-  })(jQuery);
 
-});
+        tab.find('ul.tabs > li').removeClass('current');
+        $(this).closest('li').addClass('current');
+
+        tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+        tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+
+        g.preventDefault();
+      } );
+    })(jQuery);
+
+  });
   $(function() {
     $('.product-slider .swiper-slide').matchHeight();
     $('.services-list .services-list-item .description .h4').matchHeight();
@@ -122,7 +117,8 @@ $(document).ready(function() {
     $('.recent-post-list li  .description .holder').matchHeight();
     $('.product-list.no-slider .box').matchHeight();
   });
-  
+
+
 });
 
 $.fn.isInViewport = function() {

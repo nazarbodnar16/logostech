@@ -4,15 +4,15 @@
             <div class="row">
                 <div class="col-md-7 right-offset">
                     <h4>More than imagery. security.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis saepe perspiciatis soluta assumenda fugit, commodi voluptatum corporis asperiores quae inventore dicta quidem, laudantium eligendi, corrupti tenetur quod deserunt amet libero consequuntur cupiditate provident earum! Perspiciatis officia ut, delectus facilis laborum quaerat, illo autem id corporis mollitia laboriosam illum eum consectetur hic nisi explicabo, sed ducimus. Harum, quo esse assumenda earum illum laboriosam suscipit vitae ipsum libero eos, culpa repellat reiciendis! Fugiat quas distinctio saepe sit officia eligendi ad perferendis earum magnam molestias voluptatum cumque reprehenderit tenetur animi eos, sapiente rem, tempora porro numquam. Blanditiis saepe nam inventore maiores dolor aspernatur.</p>
+                    <p>Logos Technologies LLC is a diversified science, engineering and technology company specializing in the fields of advanced sensors, wide area motion imagery, advanced analytics and processing of large, multi-source datasets. Logos serves government customers including the Department of Defense, Department of Energy and Department of Homeland Security, as well as a range of customers in commercial and international markets.</p>
                 </div>
                 <div class="col-md-5 offset-md-3">
                     <div class="recent-news">
                         <h5>Recent news</h5>
                         <ul class="recent-news-list">
-                            <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, nesciunt.</a></li>
-                            <li><a href="">Corrupti animi consectetur perferendis tempora iusto, eligendi fuga adipisci commodi.</a></li>
-                            <li><a href="">Consectetur fugit autem soluta, esse minus molestias atque, quaerat excepturi!</a></li>
+                            <li><a href="">Logos Wide-Area Motion Imagery Sensor for Insitu Integrator at Eurosatory 2018</a></li>
+                            <li><a href="">Logos Wide-Area Motion Imagery Sensor for Insitu Integrator at Eurosatory 2018</a></li>
+                            <li><a href="">Logos Wide-Area Motion Imagery Sensor for Insitu Integrator at Eurosatory 2018</a></li>
                         </ul>
                     </div>
                 </div>
@@ -88,6 +88,16 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=<?php if( !empty($webshowcase['gmap_api_key']) ) echo $webshowcase['gmap_api_key'];?>&callback=initMap">
     </script> -->
-
 </body>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <h3 class="services-name h4 red-text">Greg D. Poe, Ph.D.</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ducimus veniam, iste velit repudiandae consequatur, atque doloribus debitis ut voluptates, numquam eaque provident molestias. Similique nobis aperiam ut, veritatis quos ea in ex amet voluptatum modi, soluta et, voluptate aliquid deserunt. Minima voluptatibus, ut eum. Laboriosam, perferendis minus sint quibusdam quia molestiae ullam. Maiores reprehenderit dolorem, consequatur dignissimos iure expedita. Ipsam repellat facere excepturi nostrum enim ratione, ab id voluptates, incidunt voluptatem dignissimos expedita quos velit, inventore corporis. Itaque, incidunt ipsum facere accusamus porro cumque! Magni, voluptatem, expedita sapiente iste, praesentium neque tenetur minus reprehenderit repellat quidem facilis commodi, velit.
+    </div>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+</div>
 </html>
