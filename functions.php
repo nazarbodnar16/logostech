@@ -9,6 +9,12 @@ if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'menus' );
 }
 
+//register menus
+register_nav_menus(array(
+    'main_menu' => 'Main menu',
+    'foot_menu' => 'Footer menu'
+));
+
 add_theme_support( 'post-formats', array(
 	'aside',
 	'image',
@@ -88,3 +94,91 @@ add_filter( 'wpcf7_form_elements', function ( $content ) {
 	return $content;
 } );
 
+// ACF option pages
+
+    if( function_exists('acf_add_options_page') ) {
+
+        $option_page = acf_add_options_page(array(
+            'page_title' 	=> 'Logitech Theme Setting',
+            'menu_title' 	=> 'Theme setting',
+            'menu_slug' 	=> 'theme-general-settings',
+            'capability' 	=> 'manage_options',
+            'redirect' 	    => false
+        ));
+   		acf_add_options_sub_page(array(
+   		    'page_title'    => 'Logitech Header Settings',
+   		    'menu_title'    => 'Header',
+   		    'parent_slug'   => 'theme-general-settings',
+   		));
+   		acf_add_options_sub_page(array(
+   		    'page_title'    => 'Logitech Footer Settings',
+   		    'menu_title'    => 'Footer',
+   		    'parent_slug'   => 'theme-general-settings',
+   		));
+
+    }
+
+
+//====================================================================================================================
+//===============================================PRODUCTS CUSTOM POST TYPE========================================
+//====================================================================================================================
+
+function add_products_posts(){
+    register_post_type(
+                    'products',
+                    array(
+                        'labels'        => array(
+                                                'name'                  => 'Products',
+                                                'singular_name'         => 'Products item',
+                                                'add_new'               => 'Add new',
+                                                'add_new_item'          => 'Add new item',
+                                                'edit'                  => 'Edit',
+                                                'edit_item'             => 'Edit item',
+                                                'new_item'              => 'New item',
+                                                'view'                  => 'View',
+                                                'view_item'             => 'View item',
+                                                'search_items'          => 'Search item',
+                                                'not_found'             => 'Not found',
+                                                'not_found_in_trash'    => 'Not find in trash',
+                                        ),
+                        'public'        => true,
+                        'hierarchical'  => true, 
+                        'has_archive'   => true,
+                        'menu_icon'    => 'dashicons-cart',
+                        'supports'      => array(
+                                                'title',
+                                                //'editor',
+                                                'thumbnail',
+                                                //'post-formats',
+                                                'excerpt',
+                                                'products_artical_category'
+                                            ),
+                        'can_export' => true,
+                    )
+    );
+}
+add_action('init','add_products_posts');
+
+function my_taxonomies_products_artical() {
+    $labels = array(
+        'name'              => _x( 'Category products', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Singular name', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search items' ),
+        'all_items'         => __( 'All item' ),
+        'parent_item'       => __( 'Parent item' ),
+        'parent_item_colon' => __( 'Parent item colon' ),
+        'edit_item'         => __( 'Edit item' ), 
+        'update_item'       => __( 'Update item' ),
+        'add_new_item'      => __( 'Add new item' ),
+        'new_item_name'     => __( 'New item name' ),
+        'menu_name'         => __( 'Products Category' ),
+    );
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => true,
+        'show_ui'           => true,
+        'show_admin_column' => true
+    );
+    register_taxonomy( 'products_artical_category', 'products', $args );
+}
+add_action( 'init', 'my_taxonomies_products_artical', 0 );

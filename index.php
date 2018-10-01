@@ -15,72 +15,32 @@
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
-	<div class="visual">
+  <div class="visual">
     <div class="swiper-container baner-slider">
       <div class="swiper-wrapper">
+        <?php
+        // check if the repeater field has rows of data
+        if( have_rows('home_page_slider') ):
+        // loop through the rows of data
+        while ( have_rows('home_page_slider') ) : the_row(); ?>
         <div class="swiper-slide bg-img">
-         <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" alt="">
-         <div class="container h-100">
-          <div class="baner-description">
-           <strong class="heading">Redkite Pod</strong>
-           <p>Wide-area motion imagery in a platform agnostic pod.</p>
-           <a href="" class="default-btn">Learn more</a>
-         </div>
-       </div>
-     </div>
-     <div class="swiper-slide bg-img">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" alt="">
-      <div class="container h-100">
-        <div class="baner-description">
-          <strong class="heading">SIMERA</strong>
-          <p>Persistent city-sized coverage in only 40 pounds.</p>
-          <a href="" class="default-btn">Learn more</a>
+          <img src="<?php  the_sub_field('image'); ?>" alt="<?php  the_sub_field('title'); ?>">
+          <div class="container h-100">
+            <div class="baner-description">
+              <strong class="heading"><?php  the_sub_field('title'); ?></strong>
+              <p><?php  the_sub_field('sub_title'); ?></p>
+              <a href="<?php  the_sub_field('cta_button_link'); ?>" class="default-btn">Learn more</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="swiper-slide bg-img">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
-      <div class="container h-100">
-        <div class="baner-description">
-          <strong class="heading">Serenity</strong>
-          <p>Dual-sensor system to detect and locate sources of enemy fire.</p>
-          <a href="" class="default-btn">Learn more</a>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide bg-img">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/4.jpg" alt="">
-      <div class="container h-100">
-        <div class="baner-description">
-          <strong class="heading">Kestrel Block II </strong>
-          <p>Lightweight WAMI for 24/7 surveillance in under  85 pounds.</p>
-          <a href="" class="default-btn">Learn more</a>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide bg-img">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
-      <div class="container h-100">
-        <div class="baner-description">
-          <strong class="heading">Redkite-I</strong>
-          <p>Lightweight WAMI for the Insitu Integrator® UAS</p>
-          <a href="" class="default-btn">Learn more</a>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide bg-img">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg" alt="">
-      <div class="container h-100">
-        <div class="baner-description">
-          <strong class="heading">The advantage  of wide-area motion imagery</strong>
-          <p>Monitor an entire city-sized area, in real time,  24 hours a da</p>
-          <a href="" class="default-btn">Learn more</a>
-        </div>
+        <?php endwhile;
+        else :
+        // no rows found
+        endif;
+        ?>
       </div>
     </div>
   </div>
-</div>
-</div>
 <div class="products-holder">
   <div class="container">
     <div class="headline clearfix">
@@ -92,143 +52,67 @@ get_header(); ?>
       <div class="hr-box"><div class="hr"></div></div>
     </div>
     <div class="product-slider-box">
-     <div class="swiper-button-next"></div>
-     <div class="swiper-button-prev"></div>
-     <div class="product-slider swiper-container">
-      <ul class="product-list swiper-wrapper">
-        <li class="swiper-slide">
-          <a href="">
-            <span class="flip-box-front">
-              <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/MMSP.png" alt=""></div>
-              <div class="product-info">
-                <h2 class="product-name">MMSP</h2>
-                <p>Platform Agnostic Multi-Sensor Pod</p>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="product-slider swiper-container">
+        <ul class="product-list swiper-wrapper">
+          <?php
+          // query argument
+          $args = array(
+          'post_type' => 'products',
+          'posts_per_page' => -1,
+          'order' => ASC,
+          );
+          $query = new WP_Query( $args );
+          if ( $query->have_posts() ) {
+          while ( $query->have_posts() ) { $query->the_post(); ?>
+          <li class="swiper-slide">
+            <a href="<?php echo get_permalink(); ?>">
+              <span class="flip-box-front">
+                <div class="img"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_title(); ?>"></div>
+                <div class="product-info">
+                  <h2 class="product-name"><?php echo get_the_title(); ?></h2>
+                  <p><?php echo get_the_excerpt(); ?></p>
+                </div>
+              </span>
+              <div class="hover-img-box bg-img">
+                <img src="<?php echo get_field('hover_image');  ?>" alt="image description">
               </div>
-            </span>
-            <div class="hover-img-box bg-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/mmsp-hover.jpg" alt="image description">
-            </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
-            <span class="flip-box-front">
-              <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Serenity.png" alt=""></div>
-              <div class="product-info">
-                <h2 class="product-name">Serenity</h2>
-                <p>Aerostat or mast mounted dual fire detection system</p>
-              </div>
-            </span>
-            <div class="hover-img-box bg-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/serenity-hover.jpg" alt="image description">
-            </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
-            <span class="flip-box-front">
-              <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Redkite-I.png" alt=""></div>
-              <div class="product-info">
-                <h2 class="product-name">Redkite-I</h2>
-                <p>Powerful Wide-Area Motion Imagery in a Small Group 3 UAS</p>
-              </div>
-            </span>
-            <div class="hover-img-box bg-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/redkite-1-hover.jpg" alt="image description">
-            </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
-            <span class="flip-box-front">
-              <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Redkite.png" alt=""></div>
-              <div class="product-info">
-                <h2 class="product-name">Redkite</h2>
-                <p>Lightweight Wide-Area Motion Imagery System for Aircraft</p>
-              </div>
-            </span>
-            <div class="hover-img-box bg-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/redkite-hover.jpg" alt="image description">
-            </div>
-          </a>
-        </li>
-        <li class="swiper-slide">
-          <a href="">
-            <span class="flip-box-front">
-             <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Kestrel-Block-II.png" alt=""></div>
-             <div class="product-info">
-              <h2 class="product-name">Kestrel block II</h2>
-              <p>Lightweight day and night aerostat mounted WAMI system</p>
-            </div>
-          </span>
-          <div class="hover-img-box bg-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/kestrel-hover.jpg" alt="image description">
-            </div>
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a href="">
-          <span class="flip-box-front">
-            <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Simera.png" alt=""></div>
-            <div class="product-info">
-              <h2 class="product-name">Simera</h2>
-              <p>Lightweight aerostat mounted wide-area motion system</p>
-            </div>
-          </span>
-          <div class="hover-img-box bg-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/simera-hover.jpg" alt="image description">
-            </div>
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a href="">
-          <span class="flip-box-front">
-            <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/SilentHawk.png" alt=""></div>
-            <div class="product-info">
-              <h2 class="product-name">SilentHawk</h2>
-              <p>Hybrid-Electric Military Motorcycle</p>
-            </div>
-          </span>
-          <div class="hover-img-box bg-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/silenthawk-hover.jpg" alt="image description">
-            </div>
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a href="">
-          <span class="flip-box-front">
-            <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/Redkite.png" alt=""></div>
-            <div class="product-info">
-              <h2 class="product-name">Redkite</h2>
-              <p>Lightweight Wide-Area Motion Imagery System for Aircraft</p>
-            </div>
-          </span>
-          <div class="hover-img-box bg-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/redkite-hover.jpg" alt="image description">
-            </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
+            </a>
+          </li>
+          <?php  }
+          } else {
+          // Posts not found
+          }
+          /* Reser query */
+          wp_reset_postdata();
+          ?>
+        </ul>
+      </div>
+    </div>
 </div>
 </div>
 <div class="expeertise">
   <div class="expeertise-img bg-img">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/expertise.png" alt="">
+    <img src="<?php echo get_field('h_expeertise_background') ?>" alt="EXPERTISE IN ACTION">
   </div>
   <div class="container">
     <div class="container">
       <div class="expeertise-details">
-        <h3 class="h3">EXPERTISE IN ACTION.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sunt sed corrupti id iure, modi laborum quod praesentium aliquam aut, error labore assumenda incidunt, tenetur sint iusto. Voluptates nam dolorem labore porro neque, consectetur consequuntur nemo minus eos saepe sapiente atque vitae dicta reprehenderit totam impedit perferendis velit dolorum aliquam!</p>
+        <h3 class="h3"><?php echo get_field('h_expeertise_title') ?></h3>
+        <p><?php echo get_field('h_expeertise_subtitle') ?></p>
         <ul class="action-list">
-          <li><a href="">Large data processing and storage</a></li>
-          <li><a href="">Operations support for sensor systems</a></li>
-          <li><a href="">Advanced analytics</a></li>
-          <li><a href="">R&amp;D lifecycle services</a></li>
+          <?php 
+            $posts = get_field('h_related_posts');
+            if( $posts ): ?>            
+              <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                  <li>
+                    <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a>                  
+                  </li>
+              <?php endforeach; ?>
+            <?php endif; ?>
         </ul>
-        <a href="" class="default-btn">learn more</a>
+        <a href="<?php echo get_field('h_expeertise_learn_more_link') ?>" class="default-btn">learn more</a>
       </div>
     </div>
   </div>
@@ -295,50 +179,28 @@ get_header(); ?>
   <div class="container">
     <div class="comment-slider swiper-container">
       <ul class="swiper-wrapper">
+        <?php
+        // check if the repeater field has rows of data
+        if( have_rows('h_testimonials_items') ):
+        // loop through the rows of data
+        while ( have_rows('h_testimonials_items') ) : the_row(); ?>
         <li class="swiper-slide">
           <div class="comment-text">
-           <p>
-            The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
-          </p>
-        </div>
-        <div class="autor">Senior DHS / CBP Official</div>
-      </li>
-      <li class="swiper-slide">
-        <div class="comment-text">
-         <p>
-          The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
-        </p>
-      </div>
-      <div class="autor">Senior DHS / CBP Official</div>
-    </li>
-    <li class="swiper-slide">
-      <div class="comment-text">
-       <p>
-        The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
-      </p>
+            <p>
+              <?php the_sub_field('testimonial_text'); ?>
+            </p>
+          </div>
+          <div class="autor"><?php the_sub_field('author'); ?></div>
+        </li>
+        <?php endwhile;
+        else :
+        // no rows found
+        endif;
+        ?>
+      </ul>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="autor">Senior DHS / CBP Official</div>
-  </li>
-  <li class="swiper-slide">
-    <div class="comment-text">
-     <p>
-      The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
-    </p>
   </div>
-  <div class="autor">Senior DHS / CBP Official</div>
-</li>
-<li class="swiper-slide">
-  <div class="comment-text">
-   <p>
-    The coverage was amazing ... We were able to see activities happening in different parts of the city all at the same time. We could keep an eye on one area while dispatching agents to other areas.
-  </p>
-</div>
-<div class="autor">Senior DHS / CBP Official</div>
-</li>
-</ul>
-<div class="swiper-pagination"></div>
-</div>
-</div>
 </div>
 </main><!-- .site-main --><!-- .content-area -->
 

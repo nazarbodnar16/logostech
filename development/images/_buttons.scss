@@ -1,0 +1,46 @@
+.default-btn{
+	color: $clr_white;
+	position: relative;
+	text-transform: uppercase;
+	border: 1px solid $clr_white;
+	padding: 7px 33px;
+	font-size: 15px;
+	font-family: $font-oswald;
+	display: inline-block;
+	transition: all .3s;
+	&.dark-btn{
+		border-color: $clr_black;
+		color: $clr_black;
+		padding: 15px 33px;
+		&:hover{
+			border-color: $clr_red;
+			color: $clr_black;
+			&:after{
+				border-color: $clr_red;
+			}
+		}
+	}
+	&:hover{
+		border-color: $clr-red;
+		color: $clr_white;
+		&:after{
+			border-color: $clr_white;
+		}
+	}
+	&:after{
+		font-size: 18px;
+		position: absolute;
+		content: '';
+		border-top: 1px solid $clr-red;
+		border-right: 1px solid $clr-red;
+		height: 5px;
+		width: 5px;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%) rotate(45deg);
+		transition: all .3s;
+	}
+}
+button.default-btn{
+	background: transparent;
+}
