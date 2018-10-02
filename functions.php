@@ -182,3 +182,67 @@ function my_taxonomies_products_artical() {
     register_taxonomy( 'products_artical_category', 'products', $args );
 }
 add_action( 'init', 'my_taxonomies_products_artical', 0 );
+
+//====================================================================================================================
+//===============================================SERVICES CUSTOM POST TYPE========================================
+//====================================================================================================================
+
+function add_services_posts(){
+    register_post_type(
+                    'services',
+                    array(
+                        'labels'        => array(
+                                                'name'                  => 'Services',
+                                                'singular_name'         => 'Services item',
+                                                'add_new'               => 'Add new',
+                                                'add_new_item'          => 'Add new item',
+                                                'edit'                  => 'Edit',
+                                                'edit_item'             => 'Edit item',
+                                                'new_item'              => 'New item',
+                                                'view'                  => 'View',
+                                                'view_item'             => 'View item',
+                                                'search_items'          => 'Search item',
+                                                'not_found'             => 'Not found',
+                                                'not_found_in_trash'    => 'Not find in trash',
+                                        ),
+                        'public'        => true,
+                        'hierarchical'  => true, 
+                        'has_archive'   => true,
+                        'menu_icon'    => 'dashicons-share',
+                        'supports'      => array(
+                                                'title',
+                                                'editor',
+                                                'thumbnail',
+                                                //'post-formats',
+                                                'excerpt',
+                                                'services_artical_category'
+                                            ),
+                        'can_export' => true,
+                    )
+    );
+}
+add_action('init','add_services_posts');
+
+function my_taxonomies_services_artical() {
+    $labels = array(
+        'name'              => _x( 'Category services', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Singular name', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search items' ),
+        'all_items'         => __( 'All item' ),
+        'parent_item'       => __( 'Parent item' ),
+        'parent_item_colon' => __( 'Parent item colon' ),
+        'edit_item'         => __( 'Edit item' ), 
+        'update_item'       => __( 'Update item' ),
+        'add_new_item'      => __( 'Add new item' ),
+        'new_item_name'     => __( 'New item name' ),
+        'menu_name'         => __( 'Services Category' ),
+    );
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => true,
+        'show_ui'           => true,
+        'show_admin_column' => true
+    );
+    register_taxonomy( 'services_artical_category', 'services', $args );
+}
+add_action( 'init', 'my_taxonomies_services_artical', 0 );

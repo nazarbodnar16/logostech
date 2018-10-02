@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name:Internal
-*/
 get_header(); ?>
 <main>
 	<div class="internal">
