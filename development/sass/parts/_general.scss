@@ -34,6 +34,16 @@ ul{
 	padding: 0;
 	margin: 0;
 }
+.ttu{
+	text-transform: uppercase;
+}
+.white-bg{
+	background: $clr_white!important;
+	color: $text-color!important; 
+}
+.custom-position{
+	background-position: 50% 10%!important;
+}
 .red-text{
 	color: $clr-red;
 }
@@ -217,6 +227,9 @@ ul{
 			border-radius: none;
 			overflow: visible;
 			margin-bottom: 10px;
+			.hover-img-box{
+				background-size: cover;
+			}
 			@media (max-width: 991px){
 				width: 33.333%;
 			}
@@ -230,11 +243,6 @@ ul{
 				background: #fff;
 				box-shadow: 0 0 16px rgba(18,18,18,0.1);
 				border-radius: 10px;
-			}
-			&:hover{
-				a{
-					transform: rotateY(0);
-				}
 			}
 		}
 	}
@@ -362,10 +370,26 @@ ul{
 	background: $main-bg;
 	color: $clr_white;
 	position: relative;
+	&.right-img{
+		.expeertise-details{
+			float: left;
+			padding: 100px 130px 100px 0;
+			@media (max-width: 1200px){
+				padding: 100px 30px 100px 0;
+			}
+			@media (max-width: 991px){
+				padding: 50px 0;
+			}
+		}
+		.expeertise-img{
+			left: 50%;
+			right: 0;
+		}
+	}
 	.expeertise-img{
 		position: absolute;
 		left: 0;
-		right: 55%;
+		right: 50%;
 		top: 0;
 		bottom: 0;
 		background-size: cover;
@@ -376,9 +400,13 @@ ul{
 	.expeertise-details{
 		width: 50%;
 		float: right;
-		padding: 100px 0 100px 30px;
+		padding: 100px 0 100px 130px;
+		@media (max-width: 1200px){
+			padding: 100px 0 100px 30px;
+		}
 		@media (max-width: 991px){
-			width: 100%;	
+			width: 100%;
+			padding: 50px 0;	
 		}
 		@media (max-width: 768px){
 			padding: 70px 0;
@@ -527,6 +555,9 @@ ul{
 }
 .text-block{
 	padding: 50px 0 30px;
+	&.big-padding{
+		padding: 50px 0;
+	}
 	&.mod-about-page{
 		.ul.list-chek{
 			max-width: 50%;
@@ -1198,35 +1229,35 @@ ul{
 	}
 }
 .modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: auto;
-    opacity: 1;
-    background: rgba(0,0,0,.2);
+	overflow-x: hidden;
+	overflow-y: auto;
+	opacity: 1;
+	background: rgba(0,0,0,.2);
 }
 .modal .close{
-	    position: absolute;
-    top: 18px;
-    right: 15px;
-    font-size: 29px;
-    outline: none;
+	position: absolute;
+	top: 18px;
+	right: 15px;
+	font-size: 29px;
+	outline: none;
 }
 .modal.fade .modal-dialog {
-    -webkit-transition: -webkit-transform .3s ease-out;
-    -o-transition: -o-transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out,-webkit-transform .3s ease-out,-o-transform .3s ease-out;
-    top: 40%;
-    transform: translateY(-50%);
+	-webkit-transition: -webkit-transform .3s ease-out;
+	-o-transition: -o-transform .3s ease-out;
+	transition: transform .3s ease-out;
+	transition: transform .3s ease-out,-webkit-transform .3s ease-out,-o-transform .3s ease-out;
+	top: 40%;
+	transform: translateY(-50%);
 }
 .modal-content {
-    padding: 30px 30px 40px;
-    text-align: center;
-    .h4{
-    	margin-bottom: 20px;
-    }
+	padding: 30px 30px 40px;
+	text-align: center;
+	.h4{
+		margin-bottom: 20px;
+	}
 }
 .modal-dialog {
-    max-width: 700px;
-    margin: 30px auto;
+	max-width: 700px;
+	margin: 30px auto;
 }
 a:focus{text-decoration: none;}

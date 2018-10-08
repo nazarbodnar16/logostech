@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name: Product detail
-*/
 get_header(); ?>
 <main>
 	<div class="product-detail">

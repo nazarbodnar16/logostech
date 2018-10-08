@@ -21,8 +21,7 @@ get_header(); ?>
 			<p>Logos Technologies’ experts can be deployed rapidly to any location around the globe to support a variety of critical missions. These operators are expertly trained, able to adapt to a variety of needs and expectations, and are skilled in providing professional and high quality operational support.</p>
 		</div>
 	</div>
-	<div class="img-box bg-img">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/img-box-1.png" alt="">
+	<div class="img-box parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/img-box-1.png">
 	</div>
 	<div class="operations">
 		<div class="container">
