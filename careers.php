@@ -21,7 +21,7 @@ get_header(); ?>
       <a href="" class="default-btn dark-btn">VIEW ALL POSITIONS</a>
     </div>
   </div>
-  <div class="expeertise">
+  <div class="expeertise career-img-bg">
     <div class="expeertise-img bg-img">
      <img src="<?php echo get_template_directory_uri(); ?>/images/career-1.png" alt="alt">
     </div>
@@ -34,7 +34,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <div class="expeertise white-bg right-img">
+  <div class="expeertise white-bg right-img career-img-bg">
     <div class="expeertise-img bg-img">
      <img src="<?php echo get_template_directory_uri(); ?>/images/career-2.png" alt="alt">
     </div>
@@ -47,7 +47,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <div class="expeertise white-bg">
+  <div class="expeertise white-bg career-img-bg">
     <div class="expeertise-img bg-img">
      <img src="<?php echo get_template_directory_uri(); ?>/images/career-3.png" alt="alt">
     </div>

@@ -370,6 +370,11 @@ ul{
 	background: $main-bg;
 	color: $clr_white;
 	position: relative;
+	&.career-img-bg{
+		min-height: 560px;
+	    display: flex;
+	    align-items: center;
+	}
 	&.right-img{
 		.expeertise-details{
 			float: left;
