@@ -17,12 +17,7 @@ get_header(); ?>
 			<?php echo get_field('a_second_section') ?>
 		</div>
 	</div>
-<<<<<<< HEAD
 	<div class="img-box parallax-window"  data-parallax="scroll" data-image-src="<?php echo get_field('a_image_under_section') ?>">
-=======
-	<div class="img-box bg-img">
-		<img src="<?php echo get_field('a_image_under_section') ?>" alt="Image">
->>>>>>> 49f15a86a7f87a74f29c5e21cae8c19c893fc9fb
 	</div>
 	<div class="supporting mod-about-page">
 		<div class="container">
