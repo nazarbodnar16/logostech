@@ -34,11 +34,7 @@ get_header(); ?>
 				if( $posts ): ?>
 
 					<?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-<<<<<<< HEAD
-						<li>
-=======
 					    <li>
->>>>>>> 49f15a86a7f87a74f29c5e21cae8c19c893fc9fb
 							<div class="box">
 								<a href="<?php echo get_permalink( $p->ID ); ?>">
 									<span class="flip-box-front">
@@ -48,12 +44,9 @@ get_header(); ?>
 											<p><?php echo get_the_excerpt( $p->ID ); ?></p>
 										</div>
 									</span>
-<<<<<<< HEAD
 									<div class="hover-img-box bg-img">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/kestrel-hover.jpg" alt="image description">
 									</div>
-=======
->>>>>>> 49f15a86a7f87a74f29c5e21cae8c19c893fc9fb
 								</a>
 							</div>
 						</li>
@@ -78,8 +71,6 @@ get_header(); ?>
 				if( $posts ): ?>
 
 					<?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-
-<<<<<<< HEAD
 						<div class="col-md-3">
 							<div class="services-list-item">
 								<a href="<?php echo get_permalink( $p->ID ); ?>">
@@ -93,22 +84,6 @@ get_header(); ?>
 								</a>
 							</div>
 						</div>
-=======
-								<div class="col-md-3">
-									<div class="services-list-item">
-										<a href="<?php echo get_permalink( $p->ID ); ?>">
-											<span class="img bg-img">
-												<img src="<?php echo get_the_post_thumbnail_url( $p->ID ); ?>" alt="">
-											</span>
-											<span class="description clearfix">
-												<h3 style="text-transform: uppercase;" class="services-name h4 red-text"><?php echo get_the_title( $p->ID ); ?></h3>
-												<span class="default-btn"><?php the_field('s_link_label', $p->ID); ?></span>
-											</span>
-										</a>
-									</div>
-								</div>
->>>>>>> 49f15a86a7f87a74f29c5e21cae8c19c893fc9fb
-
 					<?php endforeach; ?>
 
 				<?php endif; ?>
