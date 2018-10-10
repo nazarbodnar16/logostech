@@ -583,6 +583,9 @@ ul{
 	height: 700px;
 	background-size: cover;
 	background-position: 50% 50%;
+	&.parallax-window{
+		height: 600px;
+	}
 	@media (max-width: 991px){
 		height: 400px;
 	}
@@ -1266,3 +1269,9 @@ ul{
 	margin: 30px auto;
 }
 a:focus{text-decoration: none;}
+
+.career-detail{
+	.h3{
+		margin-bottom: 25px;
+	}
+}
