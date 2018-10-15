@@ -7,3 +7,22 @@ Version: 1.0
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+@font-face {
+  font-family: 'Sffourch';
+  src: url('fonts/sffourchebold.ttf'); /* IE9 Compat Modes */
+}
+.product-description h1{
+	font-family: 'Sffourch',sans-serif;
+	font-size: 43px;
+    color: #b10d0f;
+    margin-bottom: 15px;
+}
+
+.tabs.mod-sm {
+  padding-bottom: 30px;
+}
+
+.tabs.mod-sm li a {
+  padding: 15px;
+}

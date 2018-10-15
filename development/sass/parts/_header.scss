@@ -7,6 +7,14 @@ body{
   background: $main-bg;
   padding: 15px 0;
   position: relative;
+  a{
+  color: $clr_white;
+  transition: all .3s;
+  &:hover{
+    color: $clr_gray;
+    text-decoration: none;
+  }
+}
 }
 /* open-menu */
 .open-menu{

@@ -64,6 +64,36 @@ ul{
 	padding: 0 15px;
 	margin: 0 auto;
 }
+
+.tabs_item {
+	ul {
+		li{
+			font: 16px/24px $font-quicksand;
+			color: $text-color;
+			position: relative;
+			padding-left: 20px;
+			&:before{
+				position: absolute;
+				content: '';
+				background: url(/wp-content/themes/logostech/images/check.png);
+				height: 10px;
+				width: 10px;
+				top: 8px;
+				left: 0;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	a {
+		color: inherit;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+} 
+
+
 .ul{
 	list-style: none;
 	padding: 0;
@@ -372,8 +402,8 @@ ul{
 	position: relative;
 	&.career-img-bg{
 		min-height: 560px;
-	    display: flex;
-	    align-items: center;
+		display: flex;
+		align-items: center;
 	}
 	&.right-img{
 		.expeertise-details{

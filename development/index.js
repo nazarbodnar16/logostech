@@ -143,3 +143,5 @@ $(window).on('resize scroll', function() {
     });
   }
 });
+
+sbg();
