@@ -4,6 +4,7 @@ $(window).load(function () {
 });
 
 $(document).ready(function () {
+  
   $('.bg-img').each(function() {
     $(this).css('background-image', 'url(' + $(this).find('> img').attr('src') + ')').find('> img').hide();
   });
@@ -91,6 +92,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function() { 
+ 
 
     (function ($) { 
       $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
@@ -116,6 +118,7 @@ $(document).ready(function () {
     $('.leadership-list .leadership-list-item  .description .holder').matchHeight();
     $('.recent-post-list li  .description .holder').matchHeight();
     $('.product-list.no-slider .box').matchHeight();
+    $('.services-list-item .description .descr').matchHeight();
   });
 
 
@@ -145,3 +148,17 @@ $(window).on('resize scroll', function() {
 });
 
 sbg();
+
+$('.select').on('click','.placeholder',function(){
+  var parent = $(this).closest('.select');
+  if ( ! parent.hasClass('is-open')){
+    parent.addClass('is-open');
+    $('.select.is-open').not(parent).removeClass('is-open');
+  }else{
+    parent.removeClass('is-open');
+  }
+}).on('click','ul>li',function(){
+  var parent = $(this).closest('.select');
+  parent.removeClass('is-open').find('.placeholder').text( $(this).text() );
+  parent.find('input[type=hidden]').attr('value', $(this).attr('data-value') );
+});
