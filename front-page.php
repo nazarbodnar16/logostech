@@ -128,7 +128,7 @@ get_header(); ?>
     <div class="row support-list">
       <div class="col-md-4">
         <div class="support-item tac">
-          <a href="">
+          <a href="/markets-2/">
             <div class="img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/sec1.png" alt="">
             </div>
@@ -141,7 +141,7 @@ get_header(); ?>
       </div>
       <div class="col-md-4">
         <div class="support-item tac">
-          <a href="">
+          <a href="/markets-2/">
             <div class="img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/sec2.png" alt="">
             </div>
@@ -154,7 +154,7 @@ get_header(); ?>
       </div>
       <div class="col-md-4">
         <div class="support-item tac">
-          <a href="">
+          <a href="/markets-2/">
             <div class="img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/sec3.png" alt="">
             </div>
@@ -168,7 +168,7 @@ get_header(); ?>
     </div>
     <div class="headline right-line clearfix">
       <ul class="headline-list">
-        <li><a href="" class="default-btn dark-btn">LEARN MORE ABOUT THE MARKETS WE SERVE</a></li>
+        <li><a href="/markets-2/" class="default-btn dark-btn">LEARN MORE ABOUT THE MARKETS WE SERVE</a></li>
       </ul>
       <div class="hr-box"><div class="hr"></div></div>
     </div>

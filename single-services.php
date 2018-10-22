@@ -124,15 +124,7 @@
 		</div>
 		<div class="container">
 			<div class="request-form expeertise-details">
-				<form action="">
-					<input type="text" class="form-control" placeholder="Company name">
-					<input type="text" class="form-control" placeholder="First Name">
-					<input type="text" class="form-control" placeholder="Last Name">
-					<input type="text" class="form-control" placeholder="Country">
-					<input type="text" class="form-control" placeholder="Email">
-					<input type="text" class="form-control" placeholder="PHONE">
-					<button  class="default-btn">REQUEST INFORMATION</button>
-				</form>
+				<?php echo do_shortcode('[contact-form-7 id="177" title="REQUEST INFORMATION" html_class="use-floating-validation-tip"]') ?>
 			</div>
 		</div>
 	</div>

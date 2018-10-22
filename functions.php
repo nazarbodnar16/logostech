@@ -48,10 +48,11 @@ function my_assets() {
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/development/css/fontawesome-free-5.3.1-web/css/all.css', '1.0' );
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/development/css/bootstrap.min.css' );
 	wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/development/css/jquery.fancybox.min.css' );
+    wp_enqueue_style( 'sumoselect', get_template_directory_uri() . '/styles/sumoselect.min.css' );
 
 	//jQuery minified
 	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', get_template_directory_uri() . '/scripts/jquery.min.js', false, null, true );
+	wp_register_script( 'jquery', get_template_directory_uri() . '/scripts/jquery.min.js', false, null, false );
 	wp_enqueue_script( 'jquery' );
 
 	//Vendor scripts
@@ -64,6 +65,7 @@ function my_assets() {
 	wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/development/scripts/jquery.matchHeight-min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/development/scripts/bootstrap.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'id-custom-script', get_template_directory_uri() . '/scripts/index.min.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'sumo-select', get_template_directory_uri() . '/scripts/jquery.sumoselect.min.js', array('jquery'), '1.0.0', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'my_assets' );
@@ -90,10 +92,10 @@ add_theme_support( 'post-formats', array(
 ) );
 
 //Disable Contact Form 7 wrapping inputs into span's
-add_filter( 'wpcf7_form_elements', function ( $content ) {
-	$content = preg_replace( '/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content );
-	return $content;
-} );
+// add_filter( 'wpcf7_form_elements', function ( $content ) {
+// 	$content = preg_replace( '/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content );
+// 	return $content;
+// } );
 
 // ACF option pages
 

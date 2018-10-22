@@ -14,28 +14,6 @@ get_header(); ?>
 
 				<div class="post-content">
 					<?php the_content(); ?>
-
-					<!-- <p>International operators of tactical UAS to get glimpse of new, powerful, lightweight system</p>
-					<div class="internal-img-box">
-						<div class="desc">
-							<p>Logos Technologies will be exhibiting its lightweight Redkite-I wide-area motion imagery (WAMI) system at Eurosatory, on June 11-15. This will mark the first time the airborne WAMI sensor will be seen at the international defense and security business meeting hosted in Paris, France.</p>
-						</div>
-						<div class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/baner1.png" alt="">
-						</div>
-					</div>
-					<quote class="quote clearfix">
-						<div class="quote-text">Operators are used to large WAMI systems mounted on traditional platforms. Redkite-I offers something new: a sensor that can actually be carried inside the payload bay of the Insitu Integrator™ tactical unmanned aircraft.</div>
-						<div class="quote-autor"> <strong>Alan Murdoch,</strong> Vice President of International Programs at Logos Technologies.</div>
-					</quote>
-					<p>Redkite-I weighs less than 25 pounds (12 kg). Despite its small size, it can image 12 square kilometers at once, all in real time—detecting and tracking all significant movers within its field of view. The WAMI system also records and archives up to eight hours of georeferenced data on board the aircraft for real-time forensic analysis.</p>
-					<p>Redkite-I images in medium resolution. Should a user need to positively identify a mover, Redkite-I can cue a narrow-field, high-resolution full motion video camera for a closer look.</p>
-					<quote class="quote">
-						<div class="quote-text">This WAMI sensor offers the local commander a powerful intelligence tool for force protection, border security, disaster response, and other missions. He or she can track events happening across a city-sized area, while also ‘looking back in time’ to see what led up to those moments.</div>
-						<div class="quote-autor"> <strong>Alan Murdoch,</strong> Vice President of International Programs at Logos Technologies.</div>
-					</quote>
-					<p>Users can view up to 10 different real-time and recorded imagery feeds pulled from within the system’s expansive field of view and watch those “chip-outs” on their tablets and other mobile devices.</p>
-					<p>In addition to the version in the payload bay of the Insitu Integrator, Redkite can also be housed in a platform-independent pod that can be mounted to planes, helicopters, and other unmanned aircraft systems (UAS).</p>
-					<p>Logos Technologies will be exhibiting Redkite-I at Eurosatory 2018. For more information on Logos Technologies and its ISR solutions, please visit Stand C451 in Hall 5A, June 11-15.</p> -->
 				</div>
 				
 				<?php if( get_field('sip_about_logos_technologies_block') ): ?>
