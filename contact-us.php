@@ -50,32 +50,7 @@ get_header(); ?>
       <div class="request-form expeertise-details">
         <h2 class="h2">GET IN TOUCH WITH US</h2>
         <p>Use the form below to get in touch. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <form action="">
-          <input type="text" class="form-control" placeholder="Name">
-          <input type="text" class="form-control" placeholder="Email">
-          <div class="select">
-            <span class="placeholder">Subject</span>
-            <ul>
-              <li data-value="1">1</li>
-              <li data-value="2">2</li>
-              <li data-value="3">3</li>
-              <li data-value="4">4</li>
-            </ul>
-            <input type="hidden" name="changeme"/>
-          </div>
-          <div class="select">
-            <span class="placeholder">Topic</span>
-            <ul>
-              <li data-value="1">1</li>
-              <li data-value="2">2</li>
-              <li data-value="3">3</li>
-              <li data-value="4">4</li>
-            </ul>
-            <input type="hidden" name="changeme"/>
-          </div>
-          <textarea class="form-control" placeholder="Message"></textarea>
-          <button class="default-btn">SUBMIT</button>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="1884" title="Contact form" html_class="contact-us-form use-floating-validation-tip"]') ?>
       </div>
     </div>
   </div>

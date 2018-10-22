@@ -17,9 +17,6 @@ get_header(); ?>
 					<div class="col-md-7">
 						<div class="product-description">
 							<h1><?php echo get_the_title(); ?></h1>
-<!-- 							<div class="img-head">
-								<img src="<?php //echo get_template_directory_uri(); ?>/images/kestrel-heading.png" alt="">
-							</div> -->
 							<h2 class="h2"><?php echo get_field('sp_top_description_subtitle'); ?></h2>
 							<p><?php echo get_field('sp_top_description') ?></p>
 							<a href="<?php echo get_field('sp_top_description_link') ?>" class="default-btn dark-btn">REQUEST MORE INFORMATION</a>
@@ -68,9 +65,10 @@ get_header(); ?>
 			</div>
 		</div> 
 	</div> <!-- / tab -->
+	<?php if( get_field('sp_enable_or_disable_video_section') ): ?>
 	<div class="featured-video">
 		<div class="container">
-			<?php if( get_field('sp_enable_or_disable_video_section') ): ?>
+			
 		
 			<div class="headline clearfix">
 				<ul class="headline-list">
@@ -110,25 +108,19 @@ get_header(); ?>
 				?>
 
 			</div>
-			<?php endif; ?>
+			
 		</div>
 	</div>
+	<?php endif; ?>
 	<div class="request expeertise">
 		<div class="request-img bg-img">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/about-product-bg.png" alt="" style="display: none;">
 			<span class="text">Systems Overview Request</span>
 		</div>
 		<div class="container">
-			<div class="request-form expeertise-details">
-				<form action="">
-					<input type="text" class="form-control" placeholder="Company name">
-					<input type="text" class="form-control" placeholder="First Name">
-					<input type="text" class="form-control" placeholder="Last Name">
-					<input type="text" class="form-control" placeholder="Country">
-					<input type="text" class="form-control" placeholder="Email">
-					<input type="text" class="form-control" placeholder="PHONE">
-					<button class="default-btn">REQUEST INFORMATION</button>
-				</form>
+			<div id="request" class="request-form expeertise-details">
+
+				<?php echo do_shortcode('[contact-form-7 id="177" title="REQUEST INFORMATION" html_class="use-floating-validation-tip"]') ?>
 			</div>
 		</div>
 	</div>
