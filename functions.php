@@ -249,3 +249,13 @@ function my_taxonomies_services_artical() {
     register_taxonomy( 'services_artical_category', 'services', $args );
 }
 add_action( 'init', 'my_taxonomies_services_artical', 0 );
+    
+// Shortcode PRODUCT ROW
+
+function product_row_shortcode() {
+    ob_start();
+    get_template_part('/shortcodes/products-row');
+    return ob_get_clean();   
+} 
+
+add_shortcode( 'product_row', 'product_row_shortcode' );

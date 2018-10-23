@@ -13,7 +13,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <div class="text-block mod-contact-page big-padding">
+  <div id="defences" class="text-block mod-contact-page big-padding">
     <div class="text-container tac">
       <h2 class="h2 ttu">Defense</h2>
       <p>At Logos Technologies, we’ve leveraged our system engineering and field expertise to support military and intelligence community users with a wide range of innovative sensors, platforms, and professional services.</p>
@@ -83,7 +83,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <div class="text-block mod-contact-page big-padding">
+  <div id="homeland" class="text-block mod-contact-page big-padding">
     <div class="text-container tac">
       <h2 class="h2 ttu">Homeland Security</h2>
       <p>Nations today face a number of domestic security challenges, including terrorism, human trafficking, and drug smuggling. To check these threats, Logos Technologies, an industry leader in wide-area motion imagery (WAMI), has applied its battlefield-proven sensor technology to homeland security.</p>
@@ -166,7 +166,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <div class="text-block big-padding">
+  <div id="law" class="text-block big-padding">
     <div class="text-container tac">
       <h2 class="h2 ttu">Law Enforcement</h2>
     	<p>Logos Technologies develops wide-area motion imagery (WAMI) sensors that serve as a force multiplier for law enforcement. Our sensors support smart, data-driven policing by providing officers with real-time and archived motion imagery of an area as large as many U.S. cities. Within its coverage zone, our WAMI sensors acquire and maintain the location of vehicles and individuals and automatically index that data through automated tracking algorithms and data processing tools. This imagery can be combined with other sensor input to support data analytics and evidence-based decision-making.</p>

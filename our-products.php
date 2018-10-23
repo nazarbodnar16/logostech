@@ -45,7 +45,7 @@ get_header(); ?>
 										</div>
 									</span>
 									<div class="hover-img-box bg-img">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/kestrel-hover.jpg" alt="image description">
+										<img src="<?php echo get_field('hover_image', $p->ID);  ?>" alt="<?php echo get_the_title( $p->ID ); ?>">
 									</div>
 								</a>
 							</div>

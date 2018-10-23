@@ -30,7 +30,7 @@ get_header(); ?>
 			<div class="row support-list">
 				<div class="col-md-4">
 					<div class="support-item tac">
-						<a href="">
+						<a href="/markets-2/">
 							<div class="img">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/about-page-img1.png" alt="">
 							</div>
@@ -43,7 +43,7 @@ get_header(); ?>
 				</div>
 				<div class="col-md-4">
 					<div class="support-item tac">
-						<a href="">
+						<a href="/products-services-2/">
 							<div class="img">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/about-page-img2.png" alt="">
 							</div>
@@ -56,7 +56,7 @@ get_header(); ?>
 				</div>
 				<div class="col-md-4">
 					<div class="support-item tac">
-						<a href="">
+						<a href="/products-services-2/">
 							<div class="img">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/about-page-img3.png" alt="">
 							</div>

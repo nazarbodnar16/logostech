@@ -120,3 +120,6 @@ ul#menu-footer-menu li {
 .logo img{
   width:120px;
 }
+.post-content .product-list {
+    list-style: none;
+}
