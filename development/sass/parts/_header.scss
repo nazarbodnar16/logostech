@@ -19,7 +19,7 @@ body{
 /* open-menu */
 .open-menu{
   display: none;
-  @media (max-width: 1199px){
+  @media (max-width: 991px){
     position: absolute;
     display: block;
     top:24px;
@@ -114,7 +114,7 @@ body{
 .header-right-box{
   float: right;
   padding: 17px 0px;
-  @media (max-width: 1199px){
+  @media (max-width: 991px){
     margin-right: 40px;
   }
   .search-contact-box{
@@ -127,7 +127,7 @@ body{
 .main-nav{
   display: inline-block;
   vertical-align: middle;
-  @media (max-width: 1199px){
+  @media (max-width: 991px){
     position: fixed;
     text-align: center;
     top: -100%;
@@ -147,7 +147,7 @@ body{
     padding: 0;
     li{
       display: inline-block;
-      @media (max-width: 1199px){
+      @media (max-width: 991px){
         display: block;
         margin-bottom: 15px;
       }
