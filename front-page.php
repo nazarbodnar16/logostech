@@ -76,7 +76,7 @@ get_header(); ?>
                 </div>
               </span>
               <div class="hover-img-box bg-img">
-                <img src="<?php echo get_field('hover_image');  ?>" alt="image description">
+                <img src="<?php echo get_field('hover_image');  ?>" alt="<?php echo get_the_title(); ?>">
               </div>
             </a>
           </li>
@@ -128,7 +128,7 @@ get_header(); ?>
     <div class="row support-list">
       <div class="col-md-4">
         <div class="support-item tac">
-          <a href="/markets-2/">
+          <a href="/markets-2/#defences">
             <div class="img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/sec1.png" alt="">
             </div>
@@ -141,7 +141,7 @@ get_header(); ?>
       </div>
       <div class="col-md-4">
         <div class="support-item tac">
-          <a href="/markets-2/">
+          <a href="/markets-2/#homeland">
             <div class="img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/sec2.png" alt="">
             </div>
@@ -154,7 +154,7 @@ get_header(); ?>
       </div>
       <div class="col-md-4">
         <div class="support-item tac">
-          <a href="/markets-2/">
+          <a href="/markets-2/#law">
             <div class="img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/sec3.png" alt="">
             </div>
