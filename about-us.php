@@ -19,6 +19,7 @@ get_header(); ?>
 	</div>
 	<div class="img-box parallax-window"  data-parallax="scroll" data-image-src="<?php echo get_field('a_image_under_section') ?>">
 	</div>
+	<?php $our_cap = get_field('our_capabilities_content'); ?>
 	<div class="supporting mod-about-page">
 		<div class="container">
 			<div class="headline clearfix">
@@ -30,39 +31,39 @@ get_header(); ?>
 			<div class="row support-list">
 				<div class="col-md-4">
 					<div class="support-item tac">
-						<a href="/markets-2/">
+						<a href="<?php echo $our_cap['first_tab_link']?>">
 							<div class="img">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/about-page-img1.png" alt="">
+								<img src="<?php echo $our_cap['first_tab_icon']?>" alt="<?php echo $our_cap['first_tab_title']?>">
 							</div>
 							<div class="product-info">
-								<h2 class="product-name">Markets </h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+								<h2 class="product-name"><?php echo $our_cap['first_tab_title']?></h2>
+								<p><?php echo $our_cap['first_tab_description']?></p>
 							</div>
 						</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="support-item tac">
-						<a href="/products-services-2/">
+						<a href="<?php echo $our_cap['second_tab_link']?>">
 							<div class="img">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/about-page-img2.png" alt="">
+								<img src="<?php echo $our_cap['second_tab_icon']?>" alt="<?php echo $our_cap['second_tab_title']?>">
 							</div>
 							<div class="product-info">
-								<h2 class="product-name">Products</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+								<h2 class="product-name"><?php echo $our_cap['second_tab_title']?></h2>
+								<p><?php echo $our_cap['second_tab_description']?></p>
 							</div>
 						</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="support-item tac">
-						<a href="/products-services-2/">
+						<a href="<?php echo $our_cap['third_tab_link']?>">
 							<div class="img">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/about-page-img3.png" alt="">
+								<img src="<?php echo $our_cap['third_tab_icon']?>" alt="<?php echo $our_cap['third_tab_title']?>">
 							</div>
 							<div class="product-info">
-								<h2 class="product-name">Services </h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+								<h2 class="product-name"><?php echo $our_cap['third_tab_title']?></h2>
+								<p><?php echo $our_cap['third_tab_description']?></p>
 							</div>
 						</a>
 					</div>

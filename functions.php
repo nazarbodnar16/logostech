@@ -24,7 +24,7 @@ add_theme_support( 'post-formats', array(
 	'link',
 	'gallery',
 ) );
-
+add_post_type_support( 'page', 'excerpt' );
 add_theme_support( 'automatic-feed-links' );
 
 add_theme_support( 'html5', array(

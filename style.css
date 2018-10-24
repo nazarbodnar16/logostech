@@ -123,3 +123,10 @@ ul#menu-footer-menu li {
 .post-content .product-list {
     list-style: none;
 }
+.searchresult a{
+  text-decoration: none !important;
+  line-height: 25px;
+}
+.searchresult a:hover{
+  text-decoration: underline !important;
+}
