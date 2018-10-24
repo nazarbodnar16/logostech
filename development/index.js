@@ -31,6 +31,10 @@ $(document).ready(function () {
       delay: 4000,
       disableOnInteraction: false,
     },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
   });
 
   var swiper = new Swiper('.comment-slider', {
@@ -55,13 +59,40 @@ $(document).ready(function () {
         spaceBetween: 10
       },
 
-      768: {
+      680: {
         slidesPerView: 2,
         spaceBetween: 20
       },
 
-      1025: {
+      1200: {
         slidesPerView: 3,
+        spaceBetween: 30
+      }
+    }
+  });
+
+
+  var swiper_product = new Swiper('.product-row-slider', {
+    slidesPerView: 2,
+    spaceBetween: 15,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+
+      680: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 2,
         spaceBetween: 30
       }
     }
@@ -114,6 +145,7 @@ $(document).ready(function () {
   });
   $(function() {
     $('.product-slider .swiper-slide').matchHeight();
+    $('.product-row-slider .swiper-slide').matchHeight();
     $('.services-list .services-list-item .description .h4').matchHeight();
     $('.leadership-list .leadership-list-item  .description .holder').matchHeight();
     $('.recent-post-list li  .description .holder').matchHeight();

@@ -1,7 +1,7 @@
-<div class="product-slider-box">
+<div class="product-row-slider-box">
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
-  <div class="product-slider swiper-container">
+  <div class="product-row-slider swiper-container">
     <ul class="product-list swiper-wrapper">
       <?php
       // query argument

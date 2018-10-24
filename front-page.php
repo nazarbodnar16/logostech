@@ -30,6 +30,7 @@ get_header(); ?>
               <strong class="heading"><?php  the_sub_field('title'); ?></strong>
               <p><?php  the_sub_field('sub_title'); ?></p>
               <a href="<?php  the_sub_field('cta_button_link'); ?>" class="default-btn">Learn more</a>
+               <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
