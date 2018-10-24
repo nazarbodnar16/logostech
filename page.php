@@ -5,7 +5,7 @@
 			<div class="text-container">
 				<div class="internal-post">
 					<div class="headline clearfix">
-						<div class="hr-box"><div class="hr"></div></div>
+						<div class="hr-box default-page"><div class="hr"></div></div>
 					</div>
 					<h1 class="h1"><?php echo get_the_title(); ?></h1>
 					<div class="post-content">
