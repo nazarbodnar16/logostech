@@ -130,3 +130,6 @@ ul#menu-footer-menu li {
 .searchresult a:hover{
   text-decoration: underline !important;
 }
+.default-page{
+  padding-left: 0 !important;
+}
