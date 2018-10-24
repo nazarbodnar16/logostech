@@ -6,10 +6,10 @@ get_header(); ?>
 
 <main id="main" class="site-main" role="main">
   <div class="top-baner bg-img support-baner custom-position">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/contact-us-bg.jpg" alt="">
+    <img src="<?php echo get_field('cu_top_header_image'); ?>" alt="<?php echo get_field('cu_top_page_title'); ?>">
     <div class="container">
       <div class="heading-box">
-        <h1 class="h1 ttu">CONTACT US</h1>
+        <h1 class="h1 ttu"><?php echo get_field('cu_top_page_title'); ?></h1>
       </div>
     </div>
   </div>
@@ -23,25 +23,25 @@ get_header(); ?>
           <div class="hr-box"><div class="hr"></div></div>
         </div>
         <div class="address-box">
-          <h2 class="h2 red-text">Headquarters</h2>
-          <span>2701 Prosperity Avenue, Suite 400</span>
-          <span>Fairfax, Virginia 22031</span>
-          <span>P: 703.584.5725</span>
-          <span>F: .703.849.0880</span>
+          <h2 class="h2 red-text"><?php echo get_field('left_side_title'); ?></h2>
+          <span><?php echo get_field('headquarters_address'); ?></span>
+          <span><?php echo get_field('headquarters_second_address'); ?></span>
+          <span><?php echo get_field('headquarters_phone'); ?></span>
+          <span><?php echo get_field('headquarters_fax'); ?></span>
         </div>
         <div class="address-box">
-          <h2 class="h2 red-text">Fairfax, Virginia</h2>
-          <span>2731 Prosperity Avenue, Suite B</span>
-          <span>Fairfax, VA 22031</span>
-          <span>P: 703.584.5736</span>
-          <span>F: 703.849.0880</span>
+          <h2 class="h2 red-text"><?php echo get_field('fairfax_title'); ?></h2>
+          <span><?php echo get_field('fairfax_address'); ?></span>
+          <span><?php echo get_field('fairfax_second_address'); ?></span>
+          <span><?php echo get_field('fairfax_phone'); ?></span>
+          <span><?php echo get_field('fairfax_fax'); ?></span>
         </div>
         <div class="address-box">
-          <h2 class="h2 red-text">Raleigh, North Carolina</h2>
-          <span>8045 Arco Corporate Drive, Suite 230</span>
-          <span>Raleigh, NC 27617</span>
-          <span>P: 919.827.0540</span>
-          <span>F: 919.882.9973</span>
+          <h2 class="h2 red-text"><?php echo get_field('raleigh_title'); ?></h2>
+          <span><?php echo get_field('raleigh_address'); ?></span>
+          <span><?php echo get_field('raleigh_second_address'); ?></span>
+          <span><?php echo get_field('raleigh_phone'); ?></span>
+          <span><?php echo get_field('raleigh_fax'); ?></span>
         </div>
       </div>
       

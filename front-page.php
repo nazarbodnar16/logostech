@@ -117,6 +117,7 @@ get_header(); ?>
     </div>
   </div>
 </div>
+<?php $supp_mission = get_field('tabs_content') ?>
 <div class="supporting">
   <div class="container">
     <div class="headline clearfix">
@@ -128,39 +129,39 @@ get_header(); ?>
     <div class="row support-list">
       <div class="col-md-4">
         <div class="support-item tac">
-          <a href="/markets-2/#defences">
+          <a href="<?php echo $supp_mission['defense_link']?>">
             <div class="img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/sec1.png" alt="">
+              <img src="<?php echo $supp_mission['defense_icon']?>" alt="<?php echo $supp_mission['defense_title']?>">
             </div>
             <div class="product-info">
-              <h2 class="product-name">Defense</h2>
-              <p>Helping secure borders, national infrastructure and major public events while saving on manpower and cutting down on flighthour costs</p>
+              <h2 class="product-name"><?php echo $supp_mission['defense_title']?></h2>
+              <p><?php echo $supp_mission['defense_description']?></p>
             </div>
           </a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="support-item tac">
-          <a href="/markets-2/#homeland">
+          <a href="<?php echo $supp_mission['homeland_link']?>">
             <div class="img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/sec2.png" alt="">
+              <img src="<?php echo $supp_mission['homeland_icon']?>" alt="<?php echo $supp_mission['homeland_title']?>">
             </div>
             <div class="product-info">
-              <h2 class="product-name">Homeland Security</h2>
-              <p>Helping secure borders, national infrastructure and major public events while saving on manpower and cutting down on flighthour costs</p>
+              <h2 class="product-name"><?php echo $supp_mission['homeland_title']?></h2>
+              <p><?php echo $supp_mission['homeland_description']?></p>
             </div>
           </a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="support-item tac">
-          <a href="/markets-2/#law">
+          <a href="<?php echo $supp_mission['law_link']?>">
             <div class="img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/sec3.png" alt="">
+              <img src="<?php echo $supp_mission['law_icon']?>" alt="<?php echo $supp_mission['law_title']?>">
             </div>
             <div class="product-info">
-              <h2 class="product-name">Law Enforcement</h2>
-              <p>Helping secure borders, national infrastructure and major public events while saving on manpower and cutting down on flighthour costs</p>
+              <h2 class="product-name"><?php echo $supp_mission['law_title']?></h2>
+              <p><?php echo $supp_mission['law_description']?></p>
             </div>
           </a>
         </div>
@@ -168,7 +169,7 @@ get_header(); ?>
     </div>
     <div class="headline right-line clearfix">
       <ul class="headline-list">
-        <li><a href="/markets-2/" class="default-btn dark-btn">LEARN MORE ABOUT THE MARKETS WE SERVE</a></li>
+        <li><a href="<?php echo get_field('smw_link'); ?>" class="default-btn dark-btn">LEARN MORE ABOUT THE MARKETS WE SERVE</a></li>
       </ul>
       <div class="hr-box"><div class="hr"></div></div>
     </div>

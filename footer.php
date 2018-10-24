@@ -46,11 +46,9 @@
         </div>
     </div>
 </footer>
+
 <div class="search-desctop">
-    <form action="">
-        <input class="input-search" type="text" placeholder="Search Now">
-        <input class="input-submit" type="submit" value="Seacrh">
-    </form>
+    <?php get_search_form(); ?>
 </div>
 <?php 
 if ( is_page_template( 'contact-us.php' ) ) { ?>
