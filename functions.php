@@ -52,7 +52,7 @@ function my_assets() {
 
 	//jQuery minified
 	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', get_template_directory_uri() . '/scripts/jquery.min.js', false, null, false );
+	wp_register_script( 'jquery', get_template_directory_uri() . '/scripts/jquery.min.js', false, null, true );
 	wp_enqueue_script( 'jquery' );
 
 	//Vendor scripts

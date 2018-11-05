@@ -53,17 +53,24 @@
 <?php 
 if ( is_page_template( 'contact-us.php' ) ) { ?>
 <script>
-  $(document).ready(function () {
-    $('.c-sumoselect').SumoSelect();
-  });
+ // $(document).ready(function () {
+   // $('.c-sumoselect').SumoSelect();
+//  });
+
+
+function func() {
+  $('.c-sumoselect').SumoSelect();
+}
+setTimeout(func, 1000);
 </script>
 <?php }
 
  ?>
 <script>
     // smooth scroll to anchor
-    $(document).ready(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
+
+function smoothScroll() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
 
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 var target = $(this.hash);
@@ -77,7 +84,9 @@ if ( is_page_template( 'contact-us.php' ) ) { ?>
                 }
             }
         });
-    });
+}
+setTimeout(smoothScroll, 1000);   
+
 </script>
 
 <?php wp_footer(); ?>
