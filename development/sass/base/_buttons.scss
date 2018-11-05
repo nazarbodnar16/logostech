@@ -45,3 +45,39 @@
 button.default-btn{
 	background: transparent;
 }
+
+
+#cookie-notice .cn-button{
+	margin-top: 0;
+	background: $clr_black;
+	color: $clr_white;
+	position: relative;
+	text-transform: uppercase;
+	border: 1px solid $clr_white;
+	padding: 7px 33px;
+	font-size: 15px;
+	font-family: $font-oswald;
+	display: inline-block;
+	transition: all .3s;
+	cursor: pointer;
+	&:hover{
+		border-color: $clr-red;
+		color: $clr_white;
+		&:after{
+			border-color: $clr_white;
+		}
+	}
+	&:after{
+		font-size: 18px;
+		position: absolute;
+		content: '';
+		border-top: 1px solid $clr-red;
+		border-right: 1px solid $clr-red;
+		height: 5px;
+		width: 5px;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%) rotate(45deg);
+		transition: all .3s;
+	}
+}

@@ -38,6 +38,8 @@ $(document).ready(function () {
   });
 
   var swiper = new Swiper('.comment-slider', {
+     effect: 'fade',
+    speed: 1000,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,

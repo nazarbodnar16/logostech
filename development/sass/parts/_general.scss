@@ -547,8 +547,7 @@ ul{
 	&:hover{
 		.img{
 			&:before{
-				opacity: .5;
-				top: -20px;
+				opacity: 0;
 			}
 		}
 	}
@@ -556,21 +555,25 @@ ul{
 		max-width: 150px;
 		margin: 0 auto 50px;
 		border-radius: 50%;
-		overflow: hidden;
-		transition: all .3s;
 		z-index: 1;
 		position: relative;
+		img{
+			border-radius:50%;
+		}
 		&:before{
-			position: absolute;
 			content: '';
-			right: 0;
-			bottom: -20px;
+			position: absolute;
+			top: 1px;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			mix-blend-mode: hard-light;
+			background: #247ae2;
+			-webkit-transition: all .3s ease-in-out;
+			-o-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
 			left: 0;
-			background: #333;
-			opacity: 0;
-			border-radius:10px;
-			transition: all .3s;
-			top: 100%;
+			border-radius: 50%;
 		}
 		img{
 			width: 100%;
@@ -590,6 +593,16 @@ ul{
 	font: 700 32px/56px $font-quicksand;
 	color: $clr_white;
 	padding: 100px 0;
+	position: relative;
+	.swiper-slide{
+		top: 500px;
+		opacity: 0!important;
+		transition: 1s ease-in-out;
+		&.swiper-slide-active{
+			top: 0;
+			opacity: 1!important;
+		}
+	}
 	@media (max-width: 991px){
 		font-size: 16px;
 		line-height: 22px;
@@ -645,6 +658,9 @@ ul{
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
+		h1{
+			text-transform: uppercase;
+		}
 	}
 }
 .text-block{
@@ -680,7 +696,7 @@ ul{
 	background-size: cover;
 	background-position: 50% 50%;
 	&.parallax-window{
-		height: 600px;
+		height: 50vh;
 	}
 	@media (max-width: 991px){
 		height: 400px;
@@ -794,6 +810,10 @@ ul{
 		border-bottom: 1px solid rgba(163, 163, 163, 0.48);
 		padding: 10px 10px 10px 0;
 		margin-bottom: 10px;
+		height: 45px;
+		&:focus{
+			border-width: 2px;
+		}
 	}
 	.default-btn{
 		margin-top: 50px;
@@ -825,6 +845,11 @@ ul{
 				right: 10px;
 			}
 		}
+		.img{
+			&:before{
+				opacity: 0;
+			}
+		}
 	}
 	.img{
 		height: 210px;
@@ -832,6 +857,20 @@ ul{
 		background-position: 50% 50%;
 		margin-bottom: 34px;
 		display: block;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			mix-blend-mode: hard-light;
+			background: #247ae2;
+			-webkit-transition: all .3s ease-in-out;
+			-o-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+		}
 	}
 	.description{
 		padding: 0 25px 25px;

@@ -8,13 +8,13 @@ body{
   padding: 15px 0;
   position: relative;
   a{
-  color: $clr_white;
-  transition: all .3s;
-  &:hover{
-    color: $clr_gray;
-    text-decoration: none;
+    color: $clr_white;
+    transition: all .3s;
+    &:hover{
+      color: $clr_gray;
+      text-decoration: none;
+    }
   }
-}
 }
 /* open-menu */
 .open-menu{
@@ -130,7 +130,7 @@ body{
   @media (max-width: 991px){
     position: fixed;
     text-align: center;
-    top: -100%;
+    top: -110%;
     left: 0;
     right: 0;
     -webkit-transition: all .3s;
@@ -194,14 +194,16 @@ body{
         margin: 0;
         padding: 10px;
       }
-      .input-submit{
+      .input-box{
         position: absolute;
         right: 0;
         top: 0;
+        background: $clr_black;
+        line-height: 44px;
+        padding: 0 25px;
+      }
+      .input-submit{
         background: transparent;
-        border: none;
-        border-left: 1px solid #000;
-        height: 100%;
       }
     }
   }
@@ -220,14 +222,16 @@ body{
       margin: 0;
       padding: 25px;
     }
-    .input-submit{
+    .input-box{
       position: absolute;
       right: 0;
       top: 0;
+      background: $clr_black;
+      line-height: 74px;
+      padding: 0 25px;
+    }
+    .input-submit{
       background: transparent;
-      border: none;
-      border-left: 1px solid #000;
-      height: 100%;
     }
   }
 }

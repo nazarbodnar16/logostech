@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php echo get_bloginfo( 'name' ); ?> | Logostech Web Site</title>
+  <link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
   <meta name="description" content="<?php get_bloginfo( 'description' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,15 +25,17 @@
         <div class="mobile-search">
           <form action="">
             <input class="input-search" type="text" placeholder="Type something">
-            <input class="input-submit" type="submit" value="Seacrh">
-          </form>
-        </div>
-      </nav>
-      <div class="search-contact-box">
-        <a href="" class="seacrh-btn"><i class="fas fa-search"></i></a>
-        <a href="<?php echo get_field('contact_us_button_link', 'option') ?>" class="default-btn">contact-us</a>
-      </div>
+            <div class="input-box">
+              <input class="input-submit default-btn" type="submit" value="Seacrh">
+           </div>
+         </form>
+       </div>
+     </nav>
+     <div class="search-contact-box">
+      <a href="" class="seacrh-btn"><i class="fas fa-search"></i></a>
+      <a href="<?php echo get_field('contact_us_button_link', 'option') ?>" class="default-btn">contact-us</a>
     </div>
   </div>
+</div>
 </div>
 
