@@ -133,3 +133,6 @@ ul#menu-footer-menu li {
 .default-page{
   padding-left: 0 !important;
 }
+.comment-holder.bg-img{
+  background-attachment: fixed;
+}
