@@ -194,16 +194,23 @@ body{
         margin: 0;
         padding: 10px;
       }
-      .input-box{
+      .submit-search{
         position: absolute;
-        right: 0;
         top: 0;
-        background: $clr_black;
-        line-height: 44px;
-        padding: 0 25px;
-      }
-      .input-submit{
-        background: transparent;
+        right: 0;
+        bottom: 0;
+        /* left: 25px; */
+        width: 50px;
+        button{
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: transparent;
+          border: none;
+        }
       }
     }
   }

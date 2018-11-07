@@ -25,8 +25,9 @@
         <div class="mobile-search">
           <form action="">
             <input class="input-search" type="text" placeholder="Type something">
-            <div class="input-box">
-              <input class="input-submit default-btn" type="submit" value="Seacrh">
+            <div class="submit-search">
+              <!--  <input class="input-submit default-btn" type="submit" value="Seacrh"> -->
+              <button type="submit"> <i class="fas fa-search"></i></button>
            </div>
          </form>
        </div>

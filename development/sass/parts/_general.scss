@@ -58,6 +58,10 @@ ul{
 		font-size: 36px;
 		line-height: 44px;
 	}
+	@media (max-width: 580px){
+		font-size: 25px;
+		line-height: 27px;
+	}
 }
 .text-container{
 	max-width: 670px;
@@ -137,6 +141,12 @@ ul{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
+		@media (max-width: 768px){
+			background-position: 80% 50%;
+		}
+		@media (max-width: 580px){
+			background-position: 85% 50%;
+		}
 		&.swiper-slide-active{
 			.baner-description{
 				opacity: 1;
@@ -177,6 +187,14 @@ ul{
 		@media (max-width: 767px){
 			font-size: 18px;
 			line-height: 30px;
+		}
+		@media (max-width: 580px){
+			margin-bottom: 35px;
+			font-size: 16px;
+			line-height: 20px;
+			.default-btn{
+				margin-bottom: 25px;
+			}
 		}
 		p{
 			margin-bottom: 20px; 
@@ -435,10 +453,16 @@ ul{
 	background: $main-bg;
 	color: $clr_white;
 	position: relative;
+	@media (max-width: 991px){
+		padding: 30px 0;
+	}
 	&.career-img-bg{
 		min-height: 560px;
 		display: flex;
 		align-items: center;
+		@media (max-width: 991px){
+			min-height: auto;
+		}
 	}
 	&.right-img{
 		.expeertise-details{
@@ -448,7 +472,7 @@ ul{
 				padding: 100px 30px 100px 0;
 			}
 			@media (max-width: 991px){
-				padding: 50px 0;
+				padding: 0;
 			}
 		}
 		.expeertise-img{
@@ -476,13 +500,16 @@ ul{
 		}
 		@media (max-width: 991px){
 			width: 100%;
-			padding: 50px 0;	
+			padding: 0;
 		}
 		@media (max-width: 768px){
 			padding: 70px 0;
 		}
 		p{
 			margin-bottom: 40px;
+			@media (max-width: 991px){
+				margin-bottom: 0;
+			}
 		}
 	}
 	.action-list{
@@ -674,6 +701,9 @@ ul{
 			max-width: 50%;
 			margin: 0 auto 30px;
 			text-align: left;
+			@media (max-width: 768px){
+				max-width: 100%;
+			}
 		}
 	}
 	&.mod-contact-page{
@@ -1060,6 +1090,9 @@ ul{
 
 .internal{
 	padding: 70px 0;
+	@media (max-width: 768px){
+		padding: 30px 0;
+	}
 	h1{
 		font-family: $font-oswald;
 		color: $text-color;
@@ -1567,4 +1600,17 @@ a:focus{text-decoration: none;}
 			cursor: pointer;
 		}
 	}
+}
+
+div.wpcf7-mail-sent-ok{
+    border: none;
+    padding: 0;
+    margin: 0!important;
+    font: 18px/20px $font-abel;
+}
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
+	 border: none;
+    padding: 0;
+    margin: 0!important;
+    font: 18px/20px $font-abel;
 }
