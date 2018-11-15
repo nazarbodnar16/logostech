@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-md-5 offset-md-3">
                     <div class="recent-news">
-                        <h5>Recent news</h5>
+                        <h5>News and Updates</h5>
 
                         <ul class="recent-news-list">
                             <?php 

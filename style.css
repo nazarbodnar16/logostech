@@ -136,3 +136,15 @@ ul#menu-footer-menu li {
 .comment-holder.bg-img{
   background-attachment: fixed;
 }
+@media (max-width: 991px){
+  .logo img {
+    width: 90px;
+}
+}
+.visual .swiper-pagination-bullet {
+    width: 20px !important;
+}
+.product-name{
+    font-size: 30px !important;
+    line-height: 33px !important;
+}

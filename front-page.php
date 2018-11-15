@@ -46,9 +46,9 @@ get_header(); ?>
   <div class="container">
     <div class="headline clearfix">
       <ul class="headline-list">
-        <li>Wide-area</li>
-        <li>Persistent</li>
-        <li>minturaized</li>
+        <li>Sensors</li>
+        <li>and</li>
+        <li>Systems</li>
       </ul>
       <div class="hr-box"><div class="hr"></div></div>
     </div>
