@@ -329,7 +329,7 @@ ul{
 			display: block;
 			height: 100%;
 			width: 100%;
-			padding: 45px 0 35px;
+			padding: 20px 0;
 		}
 		a{
 			display: block;
@@ -359,7 +359,7 @@ ul{
 				right: 0;
 				bottom: 0;
 				left: 0;
-				background-size: contain;
+				background-size: cover;
 				border-radius: 10px;
 				background-position: 50% 50%;
 				width: 100%;
@@ -383,6 +383,22 @@ ul{
 					line-height: 40px;
 					text-align: center;
 				}
+			}
+			.learn-about{
+				position: absolute;
+				content: '';
+				bottom: 0;
+				left: 0;
+				right: 0;
+				backface-visibility: hidden;
+				transform: rotateY(180deg);
+				background: #e77179;
+				background: -moz-linear-gradient(top, #e77179 0%, #dc6168 22%, #b6242d 78%, #ac141e 100%);
+				background: -webkit-linear-gradient(top, #e77179 0%,#dc6168 22%,#b6242d 78%,#ac141e 100%);
+				background: linear-gradient(to bottom, #e77179 0%,#dc6168 22%,#b6242d 78%,#ac141e 100%);
+				padding: 15px;
+				color: $clr_white;
+				text-transform: uppercase;
 			}
 		}
 	}
@@ -1603,14 +1619,14 @@ a:focus{text-decoration: none;}
 }
 
 div.wpcf7-mail-sent-ok{
-    border: none;
-    padding: 0;
-    margin: 0!important;
-    font: 18px/20px $font-abel;
+	border: none;
+	padding: 0;
+	margin: 0!important;
+	font: 18px/20px $font-abel;
 }
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
-	 border: none;
-    padding: 0;
-    margin: 0!important;
-    font: 18px/20px $font-abel;
+	border: none;
+	padding: 0;
+	margin: 0!important;
+	font: 18px/20px $font-abel;
 }

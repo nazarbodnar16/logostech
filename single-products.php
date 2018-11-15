@@ -167,6 +167,7 @@ get_header(); ?>
 								<div class="hover-img-box bg-img">
 									<img src="<?php echo get_field('hover_image');  ?>" alt="image description">
 								</div>
+								<span class="learn-about">learn more about</span>
 							</a>
 						</li>
 						<?php  }
