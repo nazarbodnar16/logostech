@@ -22,7 +22,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="headline clearfix">
 				<ul class="headline-list">
-					<li>SENSOR SYSTEMS AND PLATFORMS</li>
+					<li>Sensors and Systems</li>
 				</ul>
 				<div class="hr-box"><div class="hr"></div></div>
 			</div>

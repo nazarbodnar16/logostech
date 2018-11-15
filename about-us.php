@@ -153,7 +153,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="headline clearfix">
 				<ul class="headline-list">
-					<li>recent post</li>
+					<li>NEWS AND UPDATES</li>
 				</ul>
 				<div class="hr-box"><div class="hr"></div></div>
 			</div>
