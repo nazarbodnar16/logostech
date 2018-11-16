@@ -147,12 +147,6 @@ ul{
 		@media (max-width: 580px){
 			background-position: 85% 50%;
 		}
-		&.swiper-slide-active{
-			.baner-description{
-				opacity: 1;
-				top: 50%;
-			}
-		}
 		@media (max-width: 767px){
 			height: 400px;
 			&:before{
@@ -169,8 +163,7 @@ ul{
 	}
 	.baner-description{
 		position: absolute;
-		top: 100%;
-		opacity: 0;
+		top: 50%;
 		left: 15px;
 		transform: translateY(-50%);
 		font: 400 24px/36px $font-oswald;
