@@ -147,12 +147,6 @@ ul{
 		@media (max-width: 580px){
 			background-position: 85% 50%;
 		}
-		&.swiper-slide-active{
-			.baner-description{
-				opacity: 1;
-				top: 50%;
-			}
-		}
 		@media (max-width: 767px){
 			height: 400px;
 			&:before{
@@ -169,17 +163,12 @@ ul{
 	}
 	.baner-description{
 		position: absolute;
-		top: 100%;
-		opacity: 0;
+		top: 50%;
 		left: 15px;
 		transform: translateY(-50%);
 		font: 400 24px/36px $font-oswald;
 		color: $clr_white;
 		max-width: 500px;
-		-webkit-transition:  .5s ease-in-out;
-		-moz-transition:  .5s ease-in-out;
-		-ms-transition:  .5s ease-in-out;
-		-o-transition:  .5s ease-in-out;
 		@media (max-width: 767px){
 			right: 15px;
 			max-width: 100%;
