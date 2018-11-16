@@ -26,7 +26,7 @@ $(document).ready(function () {
 
   var swiper = new Swiper('.baner-slider', {
     effect: 'fade',
-    speed: 500,
+    speed: 1500,
     autoplay: {
       delay: 4000,
       disableOnInteraction: false,
